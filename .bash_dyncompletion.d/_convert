@@ -1,0 +1,58 @@
+_convert () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-adaptive-blur -adaptive-resize \
+            -adaptive-sharpen -adjoin -affine -alpha -annotate \
+            -antialias -append -attenuate -authenticate \
+            -auto-orient -average -background -bench -bias \
+            -black-point-compensation -black-threshold \
+            -blue-primary -blur -border -bordercolor -caption \
+            -channel -charcoal -chop -clip -clip-mask -clip-path \
+            -clone -clut -coalesce -colorize -colors -colorspace \
+            -combine -comment -compose -composite -compress \
+            -contrast -contrast-stretch -convolve -crop -cycle \
+            -debug -decipher -deconstruct -define -delay -delete \
+            -density -depth -despeckle -display -dispose -distort \
+            -dither -draw -edge -emboss -encipher -encoding \
+            -endian -enhance -equalize -evaluate -extent -extract \
+            -family -fill -filter -flatten -flip -floodfill -flop \
+            -font -format -frame -fuzz -fx -gamma -gaussian-blur \
+            -geometry -gravity -green-primary -help -identify \
+            -implode -insert -intent -interlace -interpolate \
+            -label -lat -layers -level -limit -linear-stretch \
+            -liquid-rescale -list -log -loop -map -mask \
+            -mattecolor -median -modulate -monitor -monochrome \
+            -morph -mosaic -motion-blur -negate -noise -normalize \
+            -opaque -ordered-dither -orient -page -paint -ping \
+            -pointsize -polaroid -posterize -preview -print \
+            -process -profile -quality -quantize -quiet \
+            -radial-blur -raise -random-threshold -recolor \
+            -red-primary -regard-warnings -region -render -repage \
+            -resample -resize -respect-parenthesis -reverse -roll \
+            -rotate -sample -sampling-factor -scale -scene -seed \
+            -segment -separate -sepia-tone -set -shade -shadow \
+            -sharpen -shave -shear -sigmoidal-contrast -size \
+            -sketch -solarize -splice -spread -stretch -strip \
+            -stroke -strokewidth -style -swap -swirl -taint \
+            -texture -threshold -thumbnail -tile -tile-offset \
+            -tint -transform -transparent -transparent-color \
+            -transpose -transverse -treedepth -trim -type \
+            -undercolor -unique-colors -units -unsharp -verbose \
+            -version -view -vignette -virtual-pixel -wave \
+            -weight -white-point -white-threshold \
+            -write' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+adjoin +append +compress \
+            +contrast +debug +dither +endian +gamma +label +map \
+            +mask +matte +negate +noise +page +raise +render \
+            +write' -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}

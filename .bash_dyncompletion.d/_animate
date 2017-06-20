@@ -1,0 +1,30 @@
+_animate () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-alpha -authenticate -backdrop \
+            -background -bordercolor -borderwidth -channel \
+            -coalesce -colormap -colors -colorspace -crop -debug \
+            -decipher -define -delay -density -depth -display \
+            -dispose -dither -extract -filter -flatten -font \
+            -foreground -format -gamma -geometry -help \
+            -iconGeometry -iconic -identify -immutable -interlace \
+            -interpolate -limit -list -log -loop -map -mattecolor \
+            -mattecolor -monitor -monochrome -name -page -pause \
+            -quantize -quiet -regard-warnings -remote -repage \
+            -resample -resize -respect-parenthesis -rotate \
+            -sampling-factor -scenes -seed -set -shared-memory \
+            -size -strip -title -transparent-color -treedepth \
+            -trim -verbose -version -virtual-pixel -visual \
+            -window' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+debug +dither +gamma +map +matte'             -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}

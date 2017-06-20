@@ -1,0 +1,28 @@
+_import () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-adjoin -annotate -border -channel \
+            -colors -colorspace -comment -compress -crop -debug \
+            -define -delay -density -depth -descend -display \
+            -dispose -dither -encipher -encoding -endian -filter \
+            -format -frame -geometry -gravity -help -identify \
+            -interlace -interpolate -label -limit -list -log \
+            -monitor -monochrome -negate -page -pause -pointsize \
+            -quality -quantize -quiet -regard-warnings -repage \
+            -resize -respect-parenthesis -rotate -sampling-factor \
+            -scene -screen -seed -set -silent -snaps -strip \
+            -thumbnail -transparent -transparent-color -treedepth \
+            -trim -type -verbose -version -virtual-pixel \
+            -window' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+debug' -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}

@@ -1,0 +1,39 @@
+_ri () 
+{ 
+    local cur class method prefix ri_path ri_version separator IFS;
+    local -a classes;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    ri_path=$(type -p ri);
+    ri_version="$(ruby -W0 $ri_path -v 2>&1)" || ri_version=integrated;
+    [ "$ri_version" != "${ri_version%200*}" ] && ri_version=integrated;
+    IFS=', 
+	';
+    if [[ "$cur" == [A-Z]*[#.]* ]]; then
+        [[ "$cur" == *#* ]] && separator=# || separator=.;
+        class=${cur%$separator*};
+        method=${cur#*$separator};
+        classes=($class);
+        prefix="-P $class$separator";
+        ri_get_methods;
+        return 0;
+    fi;
+    if [ "$ri_version" = integrated ]; then
+        classes=($( ri -c | ruby -ne 'if /^\s*$/..$stdin.eof then \
+        if /, [A-Z]+/ then print; end; end' ));
+    else
+        if [ "$ri_version" = "ri 1.8a" ]; then
+            classes=($( ruby -W0 $ri_path |             ruby -ne 'if /^'"'"'ri'"'"' has/..$stdin.eof then \
+            if /^ .*[A-Z]/ then print; end; end' ));
+        else
+            classes=($( ruby -W0 $ri_path |             ruby -ne 'if /^I have/..$stdin.eof then \
+                if /^ .*[A-Z]/ then print; end; end' ));
+        fi;
+    fi;
+    COMPREPLY=($( compgen -W '${classes[@]}' -- "$cur" ));
+    if [[ "$cur" == [A-Z]* ]]; then
+        return 0;
+    fi;
+    method=$cur;
+    ri_get_methods
+}

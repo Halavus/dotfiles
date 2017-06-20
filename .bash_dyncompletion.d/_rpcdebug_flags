@@ -1,0 +1,13 @@
+_rpcdebug_flags () 
+{ 
+    local i module;
+    for ((i=0; i < ${#COMP_WORDS[@]}; i++ ))
+    do
+        if [[ ${COMP_WORDS[i]} == -m ]]; then
+            module=${COMP_WORDS[i+1]};
+        fi;
+    done;
+    if [ -n "$module" ]; then
+        COMPREPLY=($( compgen -W "$(rpcdebug -vh 2>&1             | command grep '^'$module' '            | awk '{$1 = ""; print $0}')" -- "$cur" ));
+    fi
+}

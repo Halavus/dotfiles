@@ -1,0 +1,21 @@
+#!/bin/bash
+suspendsystem(){
+    exec systemctl suspend
+}
+
+sdbackup(){ # Backups pictures from SD card of Nexus 5
+
+    printf "
+    Using adb-sync protocol to sync from device.
+    Download-link: https://github.com/google/adb-sync
+
+    "
+    adb-sync --reverse /storage/emulated/0/DCIM /shared/Pictures/SD_Valentin/ ;
+    adb-sync --reverse /storage/emulated/0/WhatsApp/Media/WhatsApp\ Images /shared/Pictures/SD_Valentin/ ;
+    adb-sync --reverse /storage/emulated/0/WhatsApp/Media/WhatsApp\ Video /shared/Pictures/SD_Valentin/ ;
+}
+
+eject(){ # Ejects the backup drive
+    umount /dev/sdc1
+    umount /dev/sdc2
+}

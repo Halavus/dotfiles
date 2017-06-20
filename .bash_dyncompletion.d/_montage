@@ -1,0 +1,35 @@
+_montage () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-adjoin -affine -alpha \
+            -authenticate -background -blue-primary -blur -border \
+            -bordercolor -borderwidth -caption -channel -clone \
+            -coalesce -colors -colorspace -comment -compose \
+            -compress -crop -debug -define -density -depth \
+            -display -dispose -dither -draw -encoding -endian \
+            -extract -fill -filter -flatten -flip -flop -font \
+            -format -frame -gamma -geometry -gravity \
+            -green-primary -help -identify -interlace \
+            -interpolate -label -limit -list -log -mattecolor \
+            -mode -monitor -monochrome -origin -page -pointsize \
+            -polaroid -profile -quality -quantize -quiet \
+            -red-primary -regard-warnings -repage -resize \
+            -respect-parenthesis -rotate -sampling-factor -scenes \
+            -seed -set -shadow -size -strip -stroke -texture \
+            -thumbnail -tile -title -transform -transparent \
+            -transparent-color -treedepth -trim -type -units \
+            -verbose -version -virtual-pixel \
+            -white-point' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+adjoin +compress +debug +dither \
+            +endian +gamma +label +matte +page' -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}

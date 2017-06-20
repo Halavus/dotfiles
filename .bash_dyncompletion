@@ -1,0 +1,1939 @@
+# .bash_dyncompletion - load-by-need bash completions
+# actual completion functions are stored in /home/walo/.bash/.bash_dyncompletion.d
+# this file and directory are generated from /home/walo/.bash/.bash_completion
+shopt -s extglob progcomp
+declare -r BASH_COMPLETION="/home/walo/.bash/.bash_completion"
+_ImageMagick () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ImageMagick';
+    _ImageMagick "$@"
+}
+__expand_tilde_by_ref () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/__expand_tilde_by_ref';
+    __expand_tilde_by_ref "$@"
+}
+__get_cword_at_cursor_by_ref () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/__get_cword_at_cursor_by_ref';
+    __get_cword_at_cursor_by_ref "$@"
+}
+__linux_fstab_unescape () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/__linux_fstab_unescape';
+    __linux_fstab_unescape "$@"
+}
+__ltrim_colon_completions () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/__ltrim_colon_completions';
+    __ltrim_colon_completions "$@"
+}
+__reassemble_comp_words_by_ref () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/__reassemble_comp_words_by_ref';
+    __reassemble_comp_words_by_ref "$@"
+}
+_alias () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_alias';
+    _alias "$@"
+}
+_allowed_groups () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_allowed_groups';
+    _allowed_groups "$@"
+}
+_allowed_users () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_allowed_users';
+    _allowed_users "$@"
+}
+_animate () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_animate';
+    _animate "$@"
+}
+_ant () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ant';
+    _ant "$@"
+}
+_apache2ctl () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_apache2ctl';
+    _apache2ctl "$@"
+}
+_apt_cache () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_apt_cache';
+    _apt_cache "$@"
+}
+_apt_get () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_apt_get';
+    _apt_get "$@"
+}
+_aptitude () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_aptitude';
+    _aptitude "$@"
+}
+_aspell () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_aspell';
+    _aspell "$@"
+}
+_aspell_dictionary () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_aspell_dictionary';
+    _aspell_dictionary "$@"
+}
+_autorep () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_autorep';
+    _autorep "$@"
+}
+_autosysjobs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_autosysjobs';
+    _autosysjobs "$@"
+}
+_available_interfaces () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_available_interfaces';
+    _available_interfaces "$@"
+}
+_avctrl () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_avctrl';
+    _avctrl "$@"
+}
+_badblocks () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_badblocks';
+    _badblocks "$@"
+}
+_bluetooth_adresses () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_adresses';
+    _bluetooth_adresses "$@"
+}
+_bluetooth_devices () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_devices';
+    _bluetooth_devices "$@"
+}
+_bluetooth_packet_types () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_packet_types';
+    _bluetooth_packet_types "$@"
+}
+_bluetooth_services () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_services';
+    _bluetooth_services "$@"
+}
+_bzip2 () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_bzip2';
+    _bzip2 "$@"
+}
+_cancel () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cancel';
+    _cancel "$@"
+}
+_cd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cd';
+    _cd "$@"
+}
+_cd_devices () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cd_devices';
+    _cd_devices "$@"
+}
+_cdrecord () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cdrecord';
+    _cdrecord "$@"
+}
+_chage () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_chage';
+    _chage "$@"
+}
+_chgrp () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_chgrp';
+    _chgrp "$@"
+}
+_chown () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_chown';
+    _chown "$@"
+}
+_chpasswd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_chpasswd';
+    _chpasswd "$@"
+}
+_chsh () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_chsh';
+    _chsh "$@"
+}
+_ciptool () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ciptool';
+    _ciptool "$@"
+}
+_command () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_command';
+    _command "$@"
+}
+_command_offset () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_command_offset';
+    _command_offset "$@"
+}
+_comp_dpkg_hold_packages () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_comp_dpkg_hold_packages';
+    _comp_dpkg_hold_packages "$@"
+}
+_comp_dpkg_installed_packages () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_comp_dpkg_installed_packages';
+    _comp_dpkg_installed_packages "$@"
+}
+_compare () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_compare';
+    _compare "$@"
+}
+_complete () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_complete';
+    _complete "$@"
+}
+_complete_as_root () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_complete_as_root';
+    _complete_as_root "$@"
+}
+_compopt_o_filenames () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_compopt_o_filenames';
+    _compopt_o_filenames "$@"
+}
+_composite () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_composite';
+    _composite "$@"
+}
+_configure () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_configure';
+    _configure "$@"
+}
+_configured_interfaces () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_configured_interfaces';
+    _configured_interfaces "$@"
+}
+_conjure () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_conjure';
+    _conjure "$@"
+}
+_convert () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_convert';
+    _convert "$@"
+}
+_count_args () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_count_args';
+    _count_args "$@"
+}
+_cpio () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cpio';
+    _cpio "$@"
+}
+_cpio_format () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cpio_format';
+    _cpio_format "$@"
+}
+_createdb () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_createdb';
+    _createdb "$@"
+}
+_crontab () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_crontab';
+    _crontab "$@"
+}
+_cryptsetup_device () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cryptsetup_device';
+    _cryptsetup_device "$@"
+}
+_cryptsetup_name () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_cryptsetup_name';
+    _cryptsetup_name "$@"
+}
+_dd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dd';
+    _dd "$@"
+}
+_dfutool () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dfutool';
+    _dfutool "$@"
+}
+_dhclient () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dhclient';
+    _dhclient "$@"
+}
+_display () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_display';
+    _display "$@"
+}
+_dpkg () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dpkg';
+    _dpkg "$@"
+}
+_dpkg_reconfigure () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dpkg_reconfigure';
+    _dpkg_reconfigure "$@"
+}
+_dpkg_source () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dpkg_source';
+    _dpkg_source "$@"
+}
+_dropdb () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dropdb';
+    _dropdb "$@"
+}
+_dumpe2fs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dumpe2fs';
+    _dumpe2fs "$@"
+}
+_dvd_devices () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_dvd_devices';
+    _dvd_devices "$@"
+}
+_e2freefrag () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_e2freefrag';
+    _e2freefrag "$@"
+}
+_e2label () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_e2label';
+    _e2label "$@"
+}
+_expand () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_expand';
+    _expand "$@"
+}
+_export () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_export';
+    _export "$@"
+}
+_faillog () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_faillog';
+    _faillog "$@"
+}
+_filedir () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_filedir';
+    _filedir "$@"
+}
+_filedir_xspec () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_filedir_xspec';
+    _filedir_xspec "$@"
+}
+_filefrag () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_filefrag';
+    _filefrag "$@"
+}
+_find () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_find';
+    _find "$@"
+}
+_fs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_fs';
+    _fs "$@"
+}
+_fsql () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_fsql';
+    _fsql "$@"
+}
+_fstypes () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_fstypes';
+    _fstypes "$@"
+}
+_function () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_function';
+    _function "$@"
+}
+_fusermount () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_fusermount';
+    _fusermount "$@"
+}
+_gcc () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gcc';
+    _gcc "$@"
+}
+_gdb () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gdb';
+    _gdb "$@"
+}
+_get_comp_words_by_ref () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_get_comp_words_by_ref';
+    _get_comp_words_by_ref "$@"
+}
+_get_cword () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_get_cword';
+    _get_cword "$@"
+}
+_get_first_arg () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_get_first_arg';
+    _get_first_arg "$@"
+}
+_get_pword () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_get_pword';
+    _get_pword "$@"
+}
+_getent () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_getent';
+    _getent "$@"
+}
+_gids () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gids';
+    _gids "$@"
+}
+_gpasswd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gpasswd';
+    _gpasswd "$@"
+}
+_gpg () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gpg';
+    _gpg "$@"
+}
+_gpg2 () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gpg2';
+    _gpg2 "$@"
+}
+_groupadd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_groupadd';
+    _groupadd "$@"
+}
+_groupmems () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_groupmems';
+    _groupmems "$@"
+}
+_groupmod () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_groupmod';
+    _groupmod "$@"
+}
+_growisofs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_growisofs';
+    _growisofs "$@"
+}
+_grpck () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_grpck';
+    _grpck "$@"
+}
+_gzip () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_gzip';
+    _gzip "$@"
+}
+_hciattach () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_hciattach';
+    _hciattach "$@"
+}
+_hciconfig () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_hciconfig';
+    _hciconfig "$@"
+}
+_hcitool () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_hcitool';
+    _hcitool "$@"
+}
+_hid2hci () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_hid2hci';
+    _hid2hci "$@"
+}
+_iconv () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_iconv';
+    _iconv "$@"
+}
+_id () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_id';
+    _id "$@"
+}
+_identify () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_identify';
+    _identify "$@"
+}
+_ifupdown () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ifupdown';
+    _ifupdown "$@"
+}
+_import () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_import';
+    _import "$@"
+}
+_info () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_info';
+    _info "$@"
+}
+_insmod () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_insmod';
+    _insmod "$@"
+}
+_installed_alternatives () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_installed_alternatives';
+    _installed_alternatives "$@"
+}
+_installed_modules () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_installed_modules';
+    _installed_modules "$@"
+}
+_invoke_rc_d () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_invoke_rc_d';
+    _invoke_rc_d "$@"
+}
+_ip () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ip';
+    _ip "$@"
+}
+_iptables () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_iptables';
+    _iptables "$@"
+}
+_isql () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_isql';
+    _isql "$@"
+}
+_iwconfig () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_iwconfig';
+    _iwconfig "$@"
+}
+_iwlist () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_iwlist';
+    _iwlist "$@"
+}
+_iwpriv () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_iwpriv';
+    _iwpriv "$@"
+}
+_iwspy () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_iwspy';
+    _iwspy "$@"
+}
+_java () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_java';
+    _java "$@"
+}
+_java_classes () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_java_classes';
+    _java_classes "$@"
+}
+_java_find_classpath () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_java_find_classpath';
+    _java_find_classpath "$@"
+}
+_java_find_sourcepath () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_java_find_sourcepath';
+    _java_find_sourcepath "$@"
+}
+_java_packages () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_java_packages';
+    _java_packages "$@"
+}
+_java_path () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_java_path';
+    _java_path "$@"
+}
+_javaws () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_javaws';
+    _javaws "$@"
+}
+_jilgrep () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_jilgrep';
+    _jilgrep "$@"
+}
+_jobrunhist () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_jobrunhist';
+    _jobrunhist "$@"
+}
+_kernel_versions () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_kernel_versions';
+    _kernel_versions "$@"
+}
+_kill () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_kill';
+    _kill "$@"
+}
+_killall () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_killall';
+    _killall "$@"
+}
+_known_hosts () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_known_hosts';
+    _known_hosts "$@"
+}
+_known_hosts_real () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_known_hosts_real';
+    _known_hosts_real "$@"
+}
+_l2ping () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_l2ping';
+    _l2ping "$@"
+}
+_lastlog () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_lastlog';
+    _lastlog "$@"
+}
+_linux_fstab () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_linux_fstab';
+    _linux_fstab "$@"
+}
+_longopt () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_longopt';
+    _longopt "$@"
+}
+_look () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_look';
+    _look "$@"
+}
+_lsof () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_lsof';
+    _lsof "$@"
+}
+_lzma () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_lzma';
+    _lzma "$@"
+}
+_mac_addresses () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mac_addresses';
+    _mac_addresses "$@"
+}
+_make () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_make';
+    _make "$@"
+}
+_man () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_man';
+    _man "$@"
+}
+_mii_tool () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mii_tool';
+    _mii_tool "$@"
+}
+_mkisofs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mkisofs';
+    _mkisofs "$@"
+}
+_mktemp () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mktemp';
+    _mktemp "$@"
+}
+_modules () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_modules';
+    _modules "$@"
+}
+_mogrify () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mogrify';
+    _mogrify "$@"
+}
+_montage () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_montage';
+    _montage "$@"
+}
+_mount () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mount';
+    _mount "$@"
+}
+_mutt () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_mutt';
+    _mutt "$@"
+}
+_muttaddr () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_muttaddr';
+    _muttaddr "$@"
+}
+_muttaliases () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_muttaliases';
+    _muttaliases "$@"
+}
+_muttconffiles () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_muttconffiles';
+    _muttconffiles "$@"
+}
+_muttfiledir () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_muttfiledir';
+    _muttfiledir "$@"
+}
+_muttquery () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_muttquery';
+    _muttquery "$@"
+}
+_muttrc () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_muttrc';
+    _muttrc "$@"
+}
+_newgrp () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_newgrp';
+    _newgrp "$@"
+}
+_newusers () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_newusers';
+    _newusers "$@"
+}
+_nmap () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_nmap';
+    _nmap "$@"
+}
+_nslookup () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_nslookup';
+    _nslookup "$@"
+}
+_openssl () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_openssl';
+    _openssl "$@"
+}
+_openssl_sections () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_openssl_sections';
+    _openssl_sections "$@"
+}
+_pack200 () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pack200';
+    _pack200 "$@"
+}
+_parse_help () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_parse_help';
+    _parse_help "$@"
+}
+_passwd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_passwd';
+    _passwd "$@"
+}
+_pci_ids () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pci_ids';
+    _pci_ids "$@"
+}
+_perl () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_perl';
+    _perl "$@"
+}
+_perldoc () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_perldoc';
+    _perldoc "$@"
+}
+_perlfunctions () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_perlfunctions';
+    _perlfunctions "$@"
+}
+_perlmodules () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_perlmodules';
+    _perlmodules "$@"
+}
+_pg_databases () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pg_databases';
+    _pg_databases "$@"
+}
+_pg_users () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pg_users';
+    _pg_users "$@"
+}
+_pgids () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pgids';
+    _pgids "$@"
+}
+_pgrep () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pgrep';
+    _pgrep "$@"
+}
+_pids () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pids';
+    _pids "$@"
+}
+_pnames () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pnames';
+    _pnames "$@"
+}
+_psql () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_psql';
+    _psql "$@"
+}
+_pwck () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_pwck';
+    _pwck "$@"
+}
+_python () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_python';
+    _python "$@"
+}
+_qdbus () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_qdbus';
+    _qdbus "$@"
+}
+_querybts () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_querybts';
+    _querybts "$@"
+}
+_quote_readline_by_ref () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_quote_readline_by_ref';
+    _quote_readline_by_ref "$@"
+}
+_realcommand () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_realcommand';
+    _realcommand "$@"
+}
+_renice () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_renice';
+    _renice "$@"
+}
+_reply_compgen_array () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_reply_compgen_array';
+    _reply_compgen_array "$@"
+}
+_reportbug () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_reportbug';
+    _reportbug "$@"
+}
+_rfcomm () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rfcomm';
+    _rfcomm "$@"
+}
+_rfkill () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rfkill';
+    _rfkill "$@"
+}
+_ri () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ri';
+    _ri "$@"
+}
+_rl_enabled () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rl_enabled';
+    _rl_enabled "$@"
+}
+_rmmod () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rmmod';
+    _rmmod "$@"
+}
+_root_command () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_root_command';
+    _root_command "$@"
+}
+_route () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_route';
+    _route "$@"
+}
+_rpcdebug () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rpcdebug';
+    _rpcdebug "$@"
+}
+_rpcdebug_flags () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rpcdebug_flags';
+    _rpcdebug_flags "$@"
+}
+_rsync () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rsync';
+    _rsync "$@"
+}
+_rtcwake () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_rtcwake';
+    _rtcwake "$@"
+}
+_samba_debuglevel () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_debuglevel';
+    _samba_debuglevel "$@"
+}
+_samba_domains () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_domains';
+    _samba_domains "$@"
+}
+_samba_hosts () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_hosts';
+    _samba_hosts "$@"
+}
+_samba_resolve_order () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_resolve_order';
+    _samba_resolve_order "$@"
+}
+_scp () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_scp';
+    _scp "$@"
+}
+_scp_local_files () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_scp_local_files';
+    _scp_local_files "$@"
+}
+_scp_remote_files () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_scp_remote_files';
+    _scp_remote_files "$@"
+}
+_sdptool () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sdptool';
+    _sdptool "$@"
+}
+_sendevent () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sendevent';
+    _sendevent "$@"
+}
+_service () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_service';
+    _service "$@"
+}
+_services () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_services';
+    _services "$@"
+}
+_sftp () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sftp';
+    _sftp "$@"
+}
+_sh () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sh';
+    _sh "$@"
+}
+_shells () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_shells';
+    _shells "$@"
+}
+_signals () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_signals';
+    _signals "$@"
+}
+_smbcacls () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbcacls';
+    _smbcacls "$@"
+}
+_smbclient () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbclient';
+    _smbclient "$@"
+}
+_smbcquotas () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbcquotas';
+    _smbcquotas "$@"
+}
+_smbget () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbget';
+    _smbget "$@"
+}
+_smbpasswd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbpasswd';
+    _smbpasswd "$@"
+}
+_smbtar () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbtar';
+    _smbtar "$@"
+}
+_smbtree () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_smbtree';
+    _smbtree "$@"
+}
+_split_longopt () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_split_longopt';
+    _split_longopt "$@"
+}
+_ssh () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh';
+    _ssh "$@"
+}
+_ssh_bindaddress () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_bindaddress';
+    _ssh_bindaddress "$@"
+}
+_ssh_ciphers () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_ciphers';
+    _ssh_ciphers "$@"
+}
+_ssh_copy_id () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_copy_id';
+    _ssh_copy_id "$@"
+}
+_ssh_macs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_macs';
+    _ssh_macs "$@"
+}
+_ssh_options () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_options';
+    _ssh_options "$@"
+}
+_ssh_suboption () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_suboption';
+    _ssh_suboption "$@"
+}
+_ssh_suboption_check () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_suboption_check';
+    _ssh_suboption_check "$@"
+}
+_sshcus () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sshcus';
+    _sshcus "$@"
+}
+_sshfs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sshfs';
+    _sshfs "$@"
+}
+_strace () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_strace';
+    _strace "$@"
+}
+_stream () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_stream';
+    _stream "$@"
+}
+_sysctl () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_sysctl';
+    _sysctl "$@"
+}
+_tar () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_tar';
+    _tar "$@"
+}
+_tilde () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_tilde';
+    _tilde "$@"
+}
+_tmux () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_tmux';
+    _tmux "$@"
+}
+_tune2fs () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_tune2fs';
+    _tune2fs "$@"
+}
+_uids () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_uids';
+    _uids "$@"
+}
+_umount () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_umount';
+    _umount "$@"
+}
+_unpack200 () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_unpack200';
+    _unpack200 "$@"
+}
+_update_alternatives () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_update_alternatives';
+    _update_alternatives "$@"
+}
+_update_rc_d () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_update_rc_d';
+    _update_rc_d "$@"
+}
+_upto () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_upto';
+    _upto "$@"
+}
+_upvar () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_upvar';
+    _upvar "$@"
+}
+_upvars () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_upvars';
+    _upvars "$@"
+}
+_usb_ids () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_usb_ids';
+    _usb_ids "$@"
+}
+_user_at_host () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_user_at_host';
+    _user_at_host "$@"
+}
+_useradd () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_useradd';
+    _useradd "$@"
+}
+_userdel () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_userdel';
+    _userdel "$@"
+}
+_usergroup () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_usergroup';
+    _usergroup "$@"
+}
+_usermod () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_usermod';
+    _usermod "$@"
+}
+_vipw () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_vipw';
+    _vipw "$@"
+}
+_vms () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_vms';
+    _vms "$@"
+}
+_xfreerdp () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xfreerdp';
+    _xfreerdp "$@"
+}
+_xhost () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xhost';
+    _xhost "$@"
+}
+_xmllint () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xmllint';
+    _xmllint "$@"
+}
+_xmodmap () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xmodmap';
+    _xmodmap "$@"
+}
+_xrandr () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xrandr';
+    _xrandr "$@"
+}
+_xrdb () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xrdb';
+    _xrdb "$@"
+}
+_xz () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/_xz';
+    _xz "$@"
+}
+dequote () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/dequote';
+    dequote "$@"
+}
+quote () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/quote';
+    quote "$@"
+}
+quote_readline () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/quote_readline';
+    quote_readline "$@"
+}
+ri_get_methods () 
+{ 
+    . '/home/walo/.bash/.bash_dyncompletion.d/ri_get_methods';
+    ri_get_methods "$@"
+}
+complete -F _filedir_xspec freeamp
+complete -F _autosysjobs jobssh
+complete -F _autosysjobs joblog
+complete -F _filedir_xspec bibtex
+complete -F _filedir_xspec chromium-browser
+complete -F _command do
+complete -F _command time
+complete -F _qdbus qdbus
+complete -F _apache2ctl apache2ctl
+complete -F _groupmems groupmems
+complete -o nospace -F _alias alias
+complete -o default -F _service avahi-daemon
+complete -F _tune2fs tune2fs
+complete -F _known_hosts host
+complete -o default -F _longopt tail
+complete -o default -F _service glibc.sh
+complete -F _lastlog lastlog
+complete -F _iwconfig iwconfig
+complete -F _e2freefrag e2freefrag
+complete -F _filedir_xspec lrunzip
+complete -F _jobrunhist jobrunhist
+complete -o nospace -F _dd dd
+complete -o dirnames -F _umount umount
+complete -F _filedir_xspec amaya
+complete -o default -F _service waitnfs.sh
+complete -o default -F _dropdb dropdb
+complete -F _filedir_xspec zgrep
+complete -o default -F _longopt df
+complete -F _known_hosts traceroute6
+complete -A binding bind
+complete -F _animate animate
+complete -F _filedir_xspec lzgrep
+complete -F _vms vms
+complete -u groups
+complete -o default -F _service x11-common
+complete -F _vipw vigr
+complete -F _filedir_xspec lzless
+complete -F _filedir_xspec kdvi
+complete -F _smbcquotas smbcquotas
+complete -o default -F _service hotkey-setup
+complete -F _filedir_xspec lilypond
+complete -F _command then
+complete -F _make gmake
+complete -o default -F _service rc
+complete -F _filedir_xspec sxemacs
+complete -F _command aoss
+complete -o nospace -F _rsync rsync
+complete -F _chsh chsh
+complete -o default -F _longopt du
+complete -o default -F _longopt fmt
+complete -F _crontab crontab
+complete -F _pwck pwck
+complete -o default -F _service sysstat
+complete -F _filedir_xspec ps2pdf12
+complete -F _display display
+complete -F _filedir_xspec ps2pdf13
+complete -o default -F _longopt rm
+complete -F _sftp sftp
+complete -F _filedir_xspec ps2pdf14
+complete -F _filedir_xspec lzfgrep
+complete -F _dpkg_source dpkg-source
+complete -o default -F _service unattended-upgrades
+complete -F _filedir_xspec hbrun
+complete -F _filedir_xspec kbabel
+complete -F _filedir_xspec rview
+complete -F _filedir_xspec kaffeine
+complete -o default -F _longopt touch
+complete -F _sdptool sdptool
+complete -F _known_hosts traceroute
+complete -o default -o dirnames -F _mount mount
+complete -o default -F _service screen-cleanup
+complete -F _grpck grpck
+complete -F _ri ri
+complete -F _filedir_xspec oodraw
+complete -F _filedir_xspec elinks
+complete -F _pgrep pidof
+complete -F _reportbug reportbug
+complete -A stopped -P '"%' -S '"' bg
+complete -F _gcc g++
+complete -o default -F _service rmnologin
+complete -F _composite composite
+complete -o default -F _service atd
+complete -F _filedir_xspec xpdf
+complete -o default -F _longopt pr
+complete -F _newusers newusers
+complete -o bashdefault -F _perldoc perldoc
+complete -o default -F _service checkroot.sh
+complete -o default -F _service console-setup
+complete -F _filedir_xspec latex
+complete -o default -F _longopt tac
+complete -F _vipw vipw
+complete -o default -F _longopt bc
+complete -F _hid2hci hid2hci
+complete -F _filedir_xspec rvim
+complete -F _known_hosts tracepath
+complete -F _filedir_xspec ogg123
+complete -F _filedir_xspec ps2pdfwr
+complete -F _known_hosts ping
+complete -F _lsof lsof
+complete -F _insmod insmod
+complete -F _filedir_xspec harbour
+complete -F _filedir_xspec unlzma
+complete -o default -F _longopt mkdir
+complete -F _cpio cpio
+complete -F _rdesktop rdesktop
+complete -F _known_hosts mtr
+complete -o default -F _service bootclean
+complete -F _man man
+complete -F _filedir_xspec gvim
+complete -F _autorep autorep
+complete -F _gzip pigz
+complete -F _filedir_xspec kid3-qt
+complete -F _id id
+complete -o default -F _service acpid
+complete -F _sqlite3 sqlite3
+complete -o default -F _service cups
+complete -F _pgrep pgrep
+complete -o default -F _gdb gdb
+complete -F _filedir_xspec fbxine
+complete -F _autosysjobs jobice
+complete -o default -F _longopt less
+complete -F _filedir_xspec oomath
+complete -F _filedir_xspec compress
+complete -o default -F _longopt env
+complete -F _rtcwake rtcwake
+complete -o default -F _service module-init-tools
+complete -F _tar tar
+complete -F _filedir_xspec zcat
+complete -F _autosysjobs jobdepends
+complete -o default -F _longopt wc
+complete -o default -F _longopt mknod
+complete -F _filedir_xspec modplug123
+complete -o nospace -F _cdrecord wodim
+complete -F _filedir_xspec oobase
+complete -F _filedir_xspec zipinfo
+complete -F _find find
+complete -F _pm_action pm-suspend-hybrid
+complete -v readonly
+complete -F _root_command fakeroot
+complete -F _getent getent
+complete -F _ip ip
+complete -o default -F _service alsa-utils
+complete -o default -F _service stop-bootlogd-single
+complete -F _filedir_xspec bzme
+complete -F _filedir_xspec xfig
+complete -o default -F _longopt mkfifo
+complete -o default -F _service gdm
+complete -o default -F _service gdomap
+complete -F _filedir_xspec xdvi
+complete -o default -F _longopt uniq
+complete -d pushd
+complete -F _smbpasswd smbpasswd
+complete -o default -F _service urandom
+complete -F _update_alternatives alternatives
+complete -F _kill kill
+complete -F _filedir_xspec cdiff
+complete -F _make gnumake
+complete -F _smbcacls smbcacls
+complete -F _smbtree smbtree
+complete -o default -F _mutt mutt
+complete -F _filedir_xspec evince
+complete -o default -F _longopt ldd
+complete -F _apt_cache apt-cache
+complete -F _update_alternatives update-alternatives
+complete -F _cardctl cardctl
+complete -F _filedir_xspec makeinfo
+complete -o default -F _longopt nl
+complete -F _pm_action pm-suspend
+complete -o default -F _longopt nm
+complete -F _bzip2 bzip2
+complete -o default -F _service stop-bootlogd
+complete -F _filedir_xspec kwrite
+complete -F _filedir_xspec gview
+complete -F _filedir_xspec qiv
+complete -F _filedir_xspec bzcat
+complete -F _filedir_xspec pdftex
+complete -F _filedir_xspec rpm2cpio
+complete -o default -F _longopt patch
+complete -o default -F _gpg2 gpg2
+complete -F _filedir_xspec view
+complete -o default -F _longopt sha512sum
+complete -o default -F _service killprocs
+complete -F _filedir_xspec mozilla
+complete -u sux
+complete -o default -F _longopt objcopy
+complete -o default -F _service laptop-mode
+complete -g groupdel
+complete -F _root_command gksu
+complete -o default -F _service networking
+complete -F _hciattach hciattach
+complete -o default -F _service pcmciautils
+complete -F _gcc gcc
+complete -F _ifupdown ifdown
+complete -o default -F _service mtab.sh
+complete -o default -F _look look
+complete -o default -F _service hwclockfirst.sh
+complete -o default -F _service udev-finish
+complete -F _filedir_xspec gv
+complete -F _filedir_xspec gtranslator
+complete -F _filedir_xspec jadetex
+complete -F _compare compare
+complete -o default -F _service rc.local
+complete -F _iwspy iwspy
+complete -o default -F _service keyboard-setup.sh
+complete -F _filedir_xspec gpdf
+complete -F _filedir_xspec kghostview
+complete -F _filedir_xspec pbzcat
+complete -F _known_hosts telnet
+complete -F _function function
+complete -o default -F _dpkg_reconfigure dpkg-reconfigure
+complete -F _gcc gcj
+complete -F _filedir_xspec lzcat
+complete -F _known_hosts showmount
+complete -F _avctrl avctrl
+complete -o default -F _service hostname.sh
+complete -o default -F _longopt netstat
+complete -o default -F _longopt readelf
+complete -o default -F _service reboot
+complete -F _newgrp newgrp
+complete -F _filedir_xspec vim
+complete -j -P '"%' -S '"' disown
+complete -o default -F _service rcS
+complete -F _nmap nmap
+complete -o default -F _longopt diff
+complete -o default -F _longopt wget
+complete -o default -F _longopt gprof
+complete -F _pm_powersave pm-powersave
+complete -a unalias
+complete -F _route route
+complete -o default -F _service dhcdbd
+complete -o default -F _longopt ld
+complete -o default -F _longopt sed
+complete -F _rfcomm rfcomm
+complete -F _gcc g77
+complete -F _sh sh
+complete -F _querybts querybts
+complete -F _filedir_xspec realplay
+complete -F _known_hosts ftp
+complete -F _sysctl sysctl
+complete -o default -F _createdb createdb
+complete -F _filedir_xspec lzegrep
+complete -o nospace -F _user_at_host ytalk
+complete -F _xrandr xrandr
+complete -F _mktemp mktemp
+complete -F _ssh ssh
+complete -o default -F _longopt sha224sum
+complete -F _filedir_xspec zfgrep
+complete -o default -F _longopt who
+complete -F _python python2
+complete -o default -F _service usplash
+complete -F _filedir_xspec lokalize
+complete -F _filedir_xspec kate
+complete -F _python python3
+complete -o default -F _service vmware-USBArbitrator
+complete -F _filedir_xspec pdflatex
+complete -o default -F _longopt ln
+complete -F _lftpget lftpget
+complete -F _ssh_copy_id ssh-copy-id
+complete -F _pm_is_supported pm-is-supported
+complete -o default -F _service console-screen.sh
+complete -F _configure configure
+complete -F _filedir_xspec ooimpress
+complete -F _filedir_xspec uncompress
+complete -F _complete complete
+complete -o default -F _service skeleton
+complete -F _ntpdate ntpdate
+complete -o default -F _service smbd
+complete -F _filedir_xspec zdiff
+complete -o nospace -F _sshfs sshfs
+complete -A setopt set
+complete -o default -F _service motd
+complete -u chfn
+complete -F _growisofs growisofs
+complete -F _filedir_xspec lynx
+complete -F _filedir_xspec ps2pdf
+complete -F _command vsound
+complete -F _iwlist iwlist
+complete -F _info info
+complete -o default -F _longopt seq
+complete -F _ssh autossh
+complete -F _filedir_xspec mpg321
+complete -F _filedir_xspec mpg123
+complete -F _filedir_xspec pbunzip2
+complete -u runuser
+complete -F _hcitool hcitool
+complete -F _ifupdown ifup
+complete -u w
+complete -F _nslookup nslookup
+complete -o default -F _longopt ls
+complete -F _isql isql
+complete -F _filedir_xspec gharbour
+complete -o default -F _longopt unexpand
+complete -o default -F _service policykit
+complete -F _ssh slogin
+complete -o nospace -F _cdrecord cdrecord
+complete -o default -F _service console-setup.sh
+complete -u su
+complete -F _filedir_xspec slitex
+complete -o default -F _service wpa-ifupdown
+complete -o default -F _service minissdpd
+complete -F _python python
+complete -F _filedir_xspec timidity
+complete -F _filedir_xspec dviselect
+complete -F _filedir_xspec zegrep
+complete -F _command tsocks
+complete -o default -F _service keyboard-setup
+complete -o default -F _mutt muttng
+complete -F _service service
+complete -o default -F _service nmbd
+complete -o default -F _longopt strip
+complete -F _smbget smbget
+complete -F _groupadd groupadd
+complete -F _filedir_xspec tex
+complete -c which
+complete -o default -F _service single
+complete -F _autosysjobs jobhist
+complete -F _root_command gksudo
+complete -F _qdbus dcop
+complete -F _conjure conjure
+complete -o default -F _service vmware
+complete -F _filedir_xspec hbpp
+complete -F _fsql fsql
+complete -F _dpkg dpkg
+complete -o default -F _service ntp
+complete -F _filedir_xspec wine
+complete -F _command else
+complete -F _command nice
+complete -o default -F _service nfs-common
+complete -F _filedir_xspec opera
+complete -F _known_hosts fping
+complete -o default -F _aptitude aptitude
+complete -o default -F _service vbesave
+complete -o default -F _service postgresql
+complete -F _filedir_xspec ggv
+complete -F _command nohup
+complete -o default -F _service gpsd
+complete -o default -F _service oem-config
+complete -F _xmllint xmllint
+complete -F _rfkill rfkill
+complete -F _command eval
+complete -F _xz xz
+complete -o default -F _longopt vdir
+complete -F _smbtar smbtar
+complete -F _ant ant
+complete -F _upto upto
+complete -o default -F _service cron
+complete -F _autosysjobs jobsu
+complete -F _aspell aspell
+complete -F _e2label e2label
+complete -F _rmmod rmmod
+complete -o default -F _longopt head
+complete -F _dumpe2fs dumpe2fs
+complete -o default -F _service mountall.sh
+complete -o default -F _service pulseaudio
+complete -o default -F _longopt sha1sum
+complete -F _function typeset
+complete -o default -F _service mountoverflowtmp
+complete -F _filedir_xspec texi2dvi
+complete -F _filedir_xspec ee
+complete -o default -F _openssl openssl
+complete -F _autosysjobs jobterm
+complete -F _pack200 pack200
+complete -F _groupmod groupmod
+complete -F _gzip gzip
+complete -F _filedir_xspec xv
+complete -o default -F _longopt tee
+complete -F _make pmake
+complete -o default -F _service dbus
+complete -F _filedir_xspec rgvim
+complete -F _root_command sudo
+complete -F _badblocks badblocks
+complete -o default -F _service powernowd
+complete -F _xsltproc xsltproc
+complete -j -P '"%' -S '"' jobs
+complete -o default -F _longopt split
+complete -F _java java
+complete -o default -F _service network-manager
+complete -F _filedir_xspec playmidi
+complete -A helptopic help
+complete -F _killall killall
+complete -o default -F _service halt
+complete -F _filedir_xspec xine
+complete -o default -F _service pppd-dns
+complete -o default -F _longopt m4
+complete -F _filedir_xspec aviplay
+complete -o default -F _longopt uname
+complete -F _jilgrep jilgrep
+complete -o default -F _service bluetooth
+complete -F _chpasswd chpasswd
+complete -o default -F _service lm-sensors
+complete -o default -F _gpg gpg
+complete -F _xfreerdp xfreerdp
+complete -F _filedir_xspec xemacs
+complete -F _root_command kdesudo
+complete -F _root_command really
+complete -o default -F _longopt cp
+complete -o default -F _longopt paste
+complete -F _dhclient dhclient
+complete -o default -F _service umountfs
+complete -F _chgrp chgrp
+complete -F _filedir_xspec vi
+complete -v unset
+complete -F _gcc gpc
+complete -o default -F _service checkfs.sh
+complete -F _userdel userdel
+complete -F _filedir_xspec zless
+complete -F _autosysjobs joboffice
+complete -o default -F _longopt dir
+complete -o default -F _service mountkernfs.sh
+complete -F _fusermount fusermount
+complete -o default -F _service apport
+complete -F _passwd passwd
+complete -o nospace -F _scp scp
+complete -F _rpcdebug rpcdebug
+complete -o default -F _strace strace
+complete -F _filedir_xspec xanim
+complete -F _autosysjobs joboffhold
+complete -o default -F _service xserver-xorg-input-wacom
+complete -F _filedir_xspec portecle
+complete -o default -F _longopt cut
+complete -F _filedir_xspec oocalc
+complete -F _filedir_xspec emacs
+complete -o default -F _service brltty
+complete -o default -F _service mountnfs-bootclean.sh
+complete -o default -F _longopt sha384sum
+complete -F _filedir_xspec kpdf
+complete -F _command command
+complete -F _smbclient smbclient
+complete -F _dpkg dpkg-deb
+complete -o default -F _service speech-dispatcher
+complete -F _filedir_xspec zmore
+complete -o default -F _longopt csplit
+complete -o default -F _longopt texindex
+complete -F _filedir_xspec iceweasel
+complete -F _filedir_xspec unzip
+complete -o default -F _longopt sha256sum
+complete -o default -F _service umountnfs.sh
+complete -o default -F _service samba
+complete -F _known_hosts rsh
+complete -o default -F _iconv iconv
+complete -F _filedir_xspec dvipdfm
+complete -F _known_hosts dig
+complete -F _filedir_xspec epiphany
+complete -F _gcc cc
+complete -F _autosysjobs jobstart
+complete -F _known_hosts fping6
+complete -o nospace -F _cd cd
+complete -o default -F _longopt md5sum
+complete -F _wvdial wvdial
+complete -F _filedir_xspec galeon
+complete -o default -F _service hwclock.sh
+complete -F _xhost xhost
+complete -F _filedir_xspec lyx
+complete -o default -F _service cupsys
+complete -o default -F _longopt grep
+complete -F _renice renice
+complete -F _autosysjobs jobll
+complete -F _autosysjobs jobkill
+complete -F _known_hosts rlogin
+complete -o default -F _mii_diag mii-diag
+complete -F _filedir_xspec rgview
+complete -o default -o nospace -F _export export
+complete -F _filefrag filefrag
+complete -F _insmod modprobe
+complete -o default -F _service hddtemp
+complete -F _filedir_xspec oowriter
+complete -u slay
+complete -o nospace -F _user_at_host finger
+complete -F _command exec
+complete -o default -F _service checkroot-bootclean.sh
+complete -o default -F _service sendsigs
+complete -F _filedir_xspec netscape
+complete -F _filedir_xspec acroread
+complete -o default -F _service kmod
+complete -F _javaws javaws
+complete -F _lftp lftp
+complete -o default -F _service apache-htcacheclean
+complete -o default -F _service irqbalance
+complete -F _command xargs
+complete -F _chown chown
+complete -o default -F _longopt expand
+complete -F _cardctl pccardctl
+complete -o default -F _service powernowd.early
+complete -F _iptables iptables
+complete -o default -F _service klogd
+complete -o default -F _service bootlogs
+complete -o default -F _longopt bash
+complete -F _function declare
+complete -o default -F _service anacron
+complete -o default -F _service linux-restricted-modules-common
+complete -F _filedir_xspec unxz
+complete -F _perl perl
+complete -F _filedir_xspec ly2dvi
+complete -o default -F _screen screen
+complete -F _filedir_xspec modplugplay
+complete -F _known_hosts ping6
+complete -o default -F _service loopback
+complete -F _import import
+complete -F _filedir_xspec dillo
+complete -F _filedir_xspec aaxine
+complete -F _filedir_xspec dvipdfmx
+complete -F _filedir_xspec advi
+complete -o default -F _longopt rmdir
+complete -F _man apropos
+complete -o default -F _service umountroot
+complete -F _sshcus sshcus
+complete -F _filedir_xspec lzmore
+complete -F _man whatis
+complete -o default -F _mii_tool mii-tool
+complete -F _filedir_xspec poedit
+complete -F _filedir_xspec firefox
+complete -o default -F _service bootmisc.sh
+complete -o default -F _longopt shasum
+complete -F _filedir_xspec madplay
+complete -o default -F _longopt ptx
+complete -o default -F _longopt sort
+complete -F _pm_action pm-hibernate
+complete -F _psql psql
+complete -u write
+complete -o default -F _longopt fold
+complete -F _xmodmap xmodmap
+complete -F _command ltrace
+complete -F _mogrify mogrify
+complete -A shopt shopt
+complete -o default -F _longopt od
+complete -o default -F _longopt irb
+complete -F _tmux tmux
+complete -o nospace -F _user_at_host talk
+complete -F _filedir_xspec dvips
+complete -o default -F _longopt cat
+complete -o default -F _longopt date
+complete -F _xrdb xrdb
+complete -o default -F _longopt objdump
+complete -F _gcc c++
+complete -F _autosysjobs jobls
+complete -F _ciptool ciptool
+complete -o default -F _service bootlogd
+complete -o default -F _service cups-browsed
+complete -F _filedir_xspec dvitype
+complete -F _stream stream
+complete -F _fs fs
+complete -o default -F _longopt mv
+complete -F _complete compgen
+complete -F _dfutool dfutool
+complete -o default -F _service rsyslog
+complete -o default -F _service saned
+complete -o default -F _longopt grub
+complete -F _useradd useradd
+complete -F _filedir_xspec gqmpeg
+complete -F _update_rc_d update-rc.d
+complete -F _known_hosts tracepath6
+complete -o default -F _service rpcbind
+complete -o default -F _service sddm
+complete -F _pkg_config pkg-config
+complete -F _filedir_xspec bunzip2
+complete -o default -F _longopt awk
+complete -F _filedir_xspec znew
+complete -F _mkisofs genisoimage
+complete -F _insmod modinfo
+complete -o default -F _service apache2
+complete -F _filedir_xspec dragon
+complete -o default -F _service udev
+complete -F _invoke_rc_d invoke-rc.d
+complete -o default -F _service acpi-support
+complete -o default -F _service procps
+complete -F _filedir_xspec mozilla-firefox
+complete -o default -F _longopt curl
+complete -o default -F _longopt tr
+complete -F _mkisofs mkisofs
+complete -F _make make
+complete -o default -F _service mountall-bootclean.sh
+complete -F _montage montage
+complete -F _killall pkill
+complete -F _command padsp
+complete -F _hciconfig hciconfig
+complete -F _faillog faillog
+complete -F _known_hosts ssh-installkeys
+complete -F _lzma lzma
+complete -j -P '"%' -S '"' fg
+complete -b builtin
+complete -F _convert convert
+complete -o default -F _service mountnfs.sh
+complete -F _autosysjobs jobhold
+complete -F _chage chage
+complete -F _filedir_xspec kid3
+complete -F _filedir_xspec pdfjadetex
+complete -F _filedir_xspec dvipdf
+complete -F _bzip2 pbzip2
+complete -o default -F _service hal
+complete -c type
+complete -o default -F _service sysklogd
+complete -F _filedir_xspec texi2html
+complete -F _gpasswd gpasswd
+complete -o default -F _service mountdevsubfs.sh
+complete -o default -F _service samba-ad-dc
+complete -F _filedir_xspec gunzip
+complete -F _usermod usermod
+complete -F _filedir_xspec google-chrome
+complete -F _filedir_xspec okular
+complete -F _unpack200 unpack200
+complete -F _identify identify
+complete -F _filedir_xspec xzcat
+complete -F _filedir_xspec zcmp
+complete -F _sendevent sendevent
+complete -F _apt_get apt-get
+complete -F _l2ping l2ping
+complete -F _cancel cancel
+complete -F _iwpriv iwpriv
+complete -o default -F _service exim4

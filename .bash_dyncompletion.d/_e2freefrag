@@ -1,0 +1,17 @@
+_e2freefrag () 
+{ 
+    COMPREPLY=();
+    local cur prev;
+    _get_comp_words_by_ref cur prev;
+    case $prev in 
+        -c | -h)
+            return 0
+        ;;
+    esac;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-c -h' -- "$cur" ));
+        return 0;
+    fi;
+    cur=${cur:=/dev/};
+    _filedir
+}

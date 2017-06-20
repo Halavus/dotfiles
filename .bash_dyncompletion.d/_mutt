@@ -1,0 +1,32 @@
+_mutt () 
+{ 
+    local cur prev;
+    _get_comp_words_by_ref -n =+! cur prev;
+    COMPREPLY=();
+    case $cur in 
+        -*)
+            COMPREPLY=($( compgen -W '-A -a -b -c -e -f -F -H -i -m -n \
+            -p -Q -R -s -v -x -y -z -Z -h' -- "$cur" ));
+            return 0
+        ;;
+        *)
+            case $prev in 
+                -a | -f | -F | -H | -i)
+                    _muttfiledir "$cur";
+                    return 0
+                ;;
+                -A)
+                    _muttaliases "$cur";
+                    return 0
+                ;;
+                -e | -m | -Q | -s | -h | -p | -R | -v | -y | -z | -Z)
+                    return 0
+                ;;
+                *)
+                    _muttaddr "$cur";
+                    return 0
+                ;;
+            esac
+        ;;
+    esac
+}

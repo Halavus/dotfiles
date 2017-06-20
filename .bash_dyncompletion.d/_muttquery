@@ -1,0 +1,13 @@
+_muttquery () 
+{ 
+    local cur=$1 querycmd muttcmd=${COMP_WORDS[0]};
+    local -a queryresults;
+    querycmd="$( $muttcmd -Q query_command | sed -e 's|^query_command=\"\(.*\)\"$|\1|' -e 's|%s|'$cur'|' )";
+    if [[ -z "$cur" || -z "$querycmd" ]]; then
+        queryresults=();
+    else
+        queryresults=($( $querycmd |             sed -n '2,$s|^\([^[:space:]]\{1,\}\).*|\1|p' ));
+    fi;
+    COMPREPLY=("${COMPREPLY[@]}" $( compgen -W "${queryresults[*]}"         -- "$cur" ));
+    return 0
+}

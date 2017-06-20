@@ -1,0 +1,17 @@
+_conjure () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-debug -help -list -log -monitor -quiet \
+            -regard-warnings -seed -verbose -version' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+debug' -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}

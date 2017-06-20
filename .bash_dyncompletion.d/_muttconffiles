@@ -1,0 +1,18 @@
+_muttconffiles () 
+{ 
+    local file sofar;
+    local -a newconffiles;
+    sofar=" $1 ";
+    shift;
+    while [[ -n "$1" ]]; do
+        newconffiles=($(sed -n 's|^source[[:space:]]\{1,\}\([^[:space:]]\{1,\}\).*$|\1|p' $(eval echo $1) ));
+        for file in "${newconffiles[@]}";
+        do
+            [[ ! -f "$file" || "${sofar/ ${file} / }" != "$sofar" ]] && continue;
+            sofar="$sofar $file";
+            sofar=" $(eval _muttconffiles \"$sofar\" $file) ";
+        done;
+        shift;
+    done;
+    printf '%s\n' $sofar
+}

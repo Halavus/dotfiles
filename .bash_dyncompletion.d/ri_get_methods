@@ -1,0 +1,23 @@
+ri_get_methods () 
+{ 
+    local regex;
+    if [ "$ri_version" = integrated ]; then
+        if [ -z "$separator" ]; then
+            regex="(Instance|Class)";
+        else
+            if [ "$separator" = "#" ]; then
+                regex=Instance;
+            else
+                regex=Class;
+            fi;
+        fi;
+        COMPREPLY=(${COMPREPLY[@]} "$( ri ${classes[@]} 2>/dev/null | ruby -ane             'if /^'"$regex"' methods:/.../^------------------|^$/ and \
+            /^ / then print $_.split(/, |,$/).grep(/^[^\[]*$/).join("\n"); \
+            end' | sort -u )");
+    else
+        COMPREPLY=(${COMPREPLY[@]} "$( ruby -W0 $ri_path ${classes[@]} | ruby -ane             'if /^-/.../^-/ and ! /^-/ and ! /^ +(class|module): / then \
+            print $_.split(/, |,$| +/).grep(/^[^\[]*$/).join("\n"); \
+            end' | sort -u )");
+    fi;
+    COMPREPLY=($( compgen $prefix -W '${COMPREPLY[@]}' -- $method ))
+}

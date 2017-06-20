@@ -1,0 +1,7 @@
+_muttaddr () 
+{ 
+    _muttaliases "$1";
+    _muttquery "$1";
+    COMPREPLY=("${COMPREPLY[@]}" $( compgen -u -- "$1" ));
+    return 0
+}

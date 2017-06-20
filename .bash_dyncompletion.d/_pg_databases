@@ -1,0 +1,4 @@
+_pg_databases () 
+{ 
+    COMPREPLY=($( compgen -W "$( psql -AtqwlF '	' 2>/dev/null |         awk 'NF > 1 { print $1 }' )" -- "$cur" ))
+}

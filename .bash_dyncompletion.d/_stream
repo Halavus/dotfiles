@@ -1,0 +1,22 @@
+_stream () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-authenticate -channel -colorspace \
+            -compress -debug -define -density -depth -extract \
+            -help -identify -interlace -interpolate -limit -list \
+            -log -map -monitor -quantize -quiet -regard-warnings \
+            -respect-parenthesis -sampling-factor -seed -set \
+            -size -storage-type -transparent-color -verbose \
+            -version -virtual-pixel' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+debug' -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}

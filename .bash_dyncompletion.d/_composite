@@ -1,0 +1,32 @@
+_composite () 
+{ 
+    local cur;
+    COMPREPLY=();
+    _get_comp_words_by_ref cur;
+    _ImageMagick;
+    if [[ "$cur" == -* ]]; then
+        COMPREPLY=($( compgen -W '-affine -alpha -authenticate \
+            -blend -blue-primary -border -bordercolor -channel \
+            -colors -colorspace -comment -compose -compress \
+            -debug -decipher -define -density -depth -displace \
+            -display -dispose -dissolve -dither -encipher \
+            -encoding -endian -extract -filter -font -format \
+            -geometry -gravity -green-primary -help -identify \
+            -interlace -interpolate -label -limit -list -log \
+            -monitor -monochrome -negate -page -profile -quality \
+            -quantize -quiet -red-primary -regard-warnings \
+            -repage -resize -respect-parenthesis -rotate \
+            -sampling-factor -scene -seed -sharpen -shave -size \
+            -stegano -stereo -strip -swap -thumbnail -tile \
+            -transform -transparent-color -treedepth -type -units \
+            -unsharp -verbose -version -virtual-pixel -watermark \
+            -white-point -write' -- "$cur" ));
+    else
+        if [[ "$cur" == +* ]]; then
+            COMPREPLY=($( compgen -W '+compress +debug +dither +endian +label \
+            +matte +negate +page +write' -- "$cur" ));
+        else
+            _filedir;
+        fi;
+    fi
+}
