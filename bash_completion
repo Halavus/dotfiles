@@ -48,10 +48,10 @@ fi
 
 # Alter the following to reflect the location of this file.
 #
-[ -n "$BASH_COMPLETION" ] || BASH_COMPLETION=~/.bash/.bash_completion
-[ -n "$BASH_COMPLETION_DIR" ] || BASH_COMPLETION_DIR=~/.bash/.bash_completion.d
-[ -n "$BASH_COMPLETION_SYS_DIR" ] || BASH_COMPLETION_SYS_DIR=~/.bash/.bash_completion-1.3.d
-[ -n "$BASH_COMPLETION_COMPAT_DIR" ] || BASH_COMPLETION_COMPAT_DIR=~/.bash/.bash_completion.d
+[ -n "$BASH_COMPLETION" ] || BASH_COMPLETION=~/.dotfiles/bash_completion
+[ -n "$BASH_COMPLETION_DIR" ] || BASH_COMPLETION_DIR=~/.dotfiles/bash_completion.d
+[ -n "$BASH_COMPLETION_SYS_DIR" ] || BASH_COMPLETION_SYS_DIR=~/.dotfiles/bash_completion-1.3.d
+[ -n "$BASH_COMPLETION_COMPAT_DIR" ] || BASH_COMPLETION_COMPAT_DIR=~/.dotfiles/bash_completion.d
 readonly BASH_COMPLETION BASH_COMPLETION_DIR BASH_COMPLETION_COMPAT_DIR
 
 # Set a couple of useful vars

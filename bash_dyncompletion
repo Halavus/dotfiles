@@ -1,1331 +1,1331 @@
-# .bash_dyncompletion - load-by-need bash completions
-# actual completion functions are stored in /home/walo/.bash/.bash_dyncompletion.d
-# this file and directory are generated from /home/walo/.bash/.bash_completion
+# bash_dyncompletion - load-by-need bash completions
+# actual completion functions are stored in /home/walo/.dotfiles/bash_dyncompletion.d
+# this file and directory are generated from /home/walo/.dotfiles/bash_completion
 shopt -s extglob progcomp
-declare -r BASH_COMPLETION="/home/walo/.bash/.bash_completion"
+declare -r BASH_COMPLETION="/home/walo/.dotfiles/bash_completion"
 _ImageMagick () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ImageMagick';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ImageMagick';
     _ImageMagick "$@"
 }
 __expand_tilde_by_ref () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/__expand_tilde_by_ref';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/__expand_tilde_by_ref';
     __expand_tilde_by_ref "$@"
 }
 __get_cword_at_cursor_by_ref () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/__get_cword_at_cursor_by_ref';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/__get_cword_at_cursor_by_ref';
     __get_cword_at_cursor_by_ref "$@"
 }
 __linux_fstab_unescape () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/__linux_fstab_unescape';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/__linux_fstab_unescape';
     __linux_fstab_unescape "$@"
 }
 __ltrim_colon_completions () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/__ltrim_colon_completions';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/__ltrim_colon_completions';
     __ltrim_colon_completions "$@"
 }
 __reassemble_comp_words_by_ref () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/__reassemble_comp_words_by_ref';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/__reassemble_comp_words_by_ref';
     __reassemble_comp_words_by_ref "$@"
 }
 _alias () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_alias';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_alias';
     _alias "$@"
 }
 _allowed_groups () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_allowed_groups';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_allowed_groups';
     _allowed_groups "$@"
 }
 _allowed_users () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_allowed_users';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_allowed_users';
     _allowed_users "$@"
 }
 _animate () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_animate';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_animate';
     _animate "$@"
 }
 _ant () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ant';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ant';
     _ant "$@"
 }
 _apache2ctl () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_apache2ctl';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_apache2ctl';
     _apache2ctl "$@"
 }
 _apt_cache () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_apt_cache';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_apt_cache';
     _apt_cache "$@"
 }
 _apt_get () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_apt_get';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_apt_get';
     _apt_get "$@"
 }
 _aptitude () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_aptitude';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_aptitude';
     _aptitude "$@"
 }
 _aspell () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_aspell';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_aspell';
     _aspell "$@"
 }
 _aspell_dictionary () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_aspell_dictionary';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_aspell_dictionary';
     _aspell_dictionary "$@"
 }
 _autorep () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_autorep';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_autorep';
     _autorep "$@"
 }
 _autosysjobs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_autosysjobs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_autosysjobs';
     _autosysjobs "$@"
 }
 _available_interfaces () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_available_interfaces';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_available_interfaces';
     _available_interfaces "$@"
 }
 _avctrl () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_avctrl';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_avctrl';
     _avctrl "$@"
 }
 _badblocks () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_badblocks';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_badblocks';
     _badblocks "$@"
 }
 _bluetooth_adresses () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_adresses';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_bluetooth_adresses';
     _bluetooth_adresses "$@"
 }
 _bluetooth_devices () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_devices';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_bluetooth_devices';
     _bluetooth_devices "$@"
 }
 _bluetooth_packet_types () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_packet_types';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_bluetooth_packet_types';
     _bluetooth_packet_types "$@"
 }
 _bluetooth_services () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_bluetooth_services';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_bluetooth_services';
     _bluetooth_services "$@"
 }
 _bzip2 () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_bzip2';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_bzip2';
     _bzip2 "$@"
 }
 _cancel () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cancel';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cancel';
     _cancel "$@"
 }
 _cd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cd';
     _cd "$@"
 }
 _cd_devices () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cd_devices';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cd_devices';
     _cd_devices "$@"
 }
 _cdrecord () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cdrecord';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cdrecord';
     _cdrecord "$@"
 }
 _chage () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_chage';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_chage';
     _chage "$@"
 }
 _chgrp () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_chgrp';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_chgrp';
     _chgrp "$@"
 }
 _chown () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_chown';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_chown';
     _chown "$@"
 }
 _chpasswd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_chpasswd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_chpasswd';
     _chpasswd "$@"
 }
 _chsh () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_chsh';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_chsh';
     _chsh "$@"
 }
 _ciptool () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ciptool';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ciptool';
     _ciptool "$@"
 }
 _command () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_command';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_command';
     _command "$@"
 }
 _command_offset () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_command_offset';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_command_offset';
     _command_offset "$@"
 }
 _comp_dpkg_hold_packages () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_comp_dpkg_hold_packages';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_comp_dpkg_hold_packages';
     _comp_dpkg_hold_packages "$@"
 }
 _comp_dpkg_installed_packages () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_comp_dpkg_installed_packages';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_comp_dpkg_installed_packages';
     _comp_dpkg_installed_packages "$@"
 }
 _compare () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_compare';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_compare';
     _compare "$@"
 }
 _complete () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_complete';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_complete';
     _complete "$@"
 }
 _complete_as_root () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_complete_as_root';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_complete_as_root';
     _complete_as_root "$@"
 }
 _compopt_o_filenames () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_compopt_o_filenames';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_compopt_o_filenames';
     _compopt_o_filenames "$@"
 }
 _composite () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_composite';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_composite';
     _composite "$@"
 }
 _configure () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_configure';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_configure';
     _configure "$@"
 }
 _configured_interfaces () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_configured_interfaces';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_configured_interfaces';
     _configured_interfaces "$@"
 }
 _conjure () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_conjure';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_conjure';
     _conjure "$@"
 }
 _convert () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_convert';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_convert';
     _convert "$@"
 }
 _count_args () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_count_args';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_count_args';
     _count_args "$@"
 }
 _cpio () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cpio';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cpio';
     _cpio "$@"
 }
 _cpio_format () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cpio_format';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cpio_format';
     _cpio_format "$@"
 }
 _createdb () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_createdb';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_createdb';
     _createdb "$@"
 }
 _crontab () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_crontab';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_crontab';
     _crontab "$@"
 }
 _cryptsetup_device () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cryptsetup_device';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cryptsetup_device';
     _cryptsetup_device "$@"
 }
 _cryptsetup_name () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_cryptsetup_name';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_cryptsetup_name';
     _cryptsetup_name "$@"
 }
 _dd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dd';
     _dd "$@"
 }
 _dfutool () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dfutool';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dfutool';
     _dfutool "$@"
 }
 _dhclient () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dhclient';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dhclient';
     _dhclient "$@"
 }
 _display () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_display';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_display';
     _display "$@"
 }
 _dpkg () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dpkg';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dpkg';
     _dpkg "$@"
 }
 _dpkg_reconfigure () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dpkg_reconfigure';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dpkg_reconfigure';
     _dpkg_reconfigure "$@"
 }
 _dpkg_source () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dpkg_source';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dpkg_source';
     _dpkg_source "$@"
 }
 _dropdb () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dropdb';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dropdb';
     _dropdb "$@"
 }
 _dumpe2fs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dumpe2fs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dumpe2fs';
     _dumpe2fs "$@"
 }
 _dvd_devices () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_dvd_devices';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_dvd_devices';
     _dvd_devices "$@"
 }
 _e2freefrag () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_e2freefrag';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_e2freefrag';
     _e2freefrag "$@"
 }
 _e2label () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_e2label';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_e2label';
     _e2label "$@"
 }
 _expand () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_expand';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_expand';
     _expand "$@"
 }
 _export () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_export';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_export';
     _export "$@"
 }
 _faillog () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_faillog';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_faillog';
     _faillog "$@"
 }
 _filedir () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_filedir';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_filedir';
     _filedir "$@"
 }
 _filedir_xspec () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_filedir_xspec';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_filedir_xspec';
     _filedir_xspec "$@"
 }
 _filefrag () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_filefrag';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_filefrag';
     _filefrag "$@"
 }
 _find () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_find';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_find';
     _find "$@"
 }
 _fs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_fs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_fs';
     _fs "$@"
 }
 _fsql () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_fsql';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_fsql';
     _fsql "$@"
 }
 _fstypes () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_fstypes';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_fstypes';
     _fstypes "$@"
 }
 _function () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_function';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_function';
     _function "$@"
 }
 _fusermount () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_fusermount';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_fusermount';
     _fusermount "$@"
 }
 _gcc () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gcc';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gcc';
     _gcc "$@"
 }
 _gdb () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gdb';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gdb';
     _gdb "$@"
 }
 _get_comp_words_by_ref () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_get_comp_words_by_ref';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_get_comp_words_by_ref';
     _get_comp_words_by_ref "$@"
 }
 _get_cword () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_get_cword';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_get_cword';
     _get_cword "$@"
 }
 _get_first_arg () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_get_first_arg';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_get_first_arg';
     _get_first_arg "$@"
 }
 _get_pword () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_get_pword';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_get_pword';
     _get_pword "$@"
 }
 _getent () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_getent';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_getent';
     _getent "$@"
 }
 _gids () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gids';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gids';
     _gids "$@"
 }
 _gpasswd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gpasswd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gpasswd';
     _gpasswd "$@"
 }
 _gpg () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gpg';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gpg';
     _gpg "$@"
 }
 _gpg2 () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gpg2';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gpg2';
     _gpg2 "$@"
 }
 _groupadd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_groupadd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_groupadd';
     _groupadd "$@"
 }
 _groupmems () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_groupmems';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_groupmems';
     _groupmems "$@"
 }
 _groupmod () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_groupmod';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_groupmod';
     _groupmod "$@"
 }
 _growisofs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_growisofs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_growisofs';
     _growisofs "$@"
 }
 _grpck () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_grpck';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_grpck';
     _grpck "$@"
 }
 _gzip () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_gzip';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_gzip';
     _gzip "$@"
 }
 _hciattach () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_hciattach';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_hciattach';
     _hciattach "$@"
 }
 _hciconfig () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_hciconfig';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_hciconfig';
     _hciconfig "$@"
 }
 _hcitool () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_hcitool';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_hcitool';
     _hcitool "$@"
 }
 _hid2hci () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_hid2hci';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_hid2hci';
     _hid2hci "$@"
 }
 _iconv () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_iconv';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_iconv';
     _iconv "$@"
 }
 _id () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_id';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_id';
     _id "$@"
 }
 _identify () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_identify';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_identify';
     _identify "$@"
 }
 _ifupdown () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ifupdown';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ifupdown';
     _ifupdown "$@"
 }
 _import () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_import';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_import';
     _import "$@"
 }
 _info () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_info';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_info';
     _info "$@"
 }
 _insmod () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_insmod';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_insmod';
     _insmod "$@"
 }
 _installed_alternatives () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_installed_alternatives';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_installed_alternatives';
     _installed_alternatives "$@"
 }
 _installed_modules () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_installed_modules';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_installed_modules';
     _installed_modules "$@"
 }
 _invoke_rc_d () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_invoke_rc_d';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_invoke_rc_d';
     _invoke_rc_d "$@"
 }
 _ip () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ip';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ip';
     _ip "$@"
 }
 _iptables () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_iptables';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_iptables';
     _iptables "$@"
 }
 _isql () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_isql';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_isql';
     _isql "$@"
 }
 _iwconfig () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_iwconfig';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_iwconfig';
     _iwconfig "$@"
 }
 _iwlist () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_iwlist';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_iwlist';
     _iwlist "$@"
 }
 _iwpriv () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_iwpriv';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_iwpriv';
     _iwpriv "$@"
 }
 _iwspy () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_iwspy';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_iwspy';
     _iwspy "$@"
 }
 _java () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_java';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_java';
     _java "$@"
 }
 _java_classes () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_java_classes';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_java_classes';
     _java_classes "$@"
 }
 _java_find_classpath () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_java_find_classpath';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_java_find_classpath';
     _java_find_classpath "$@"
 }
 _java_find_sourcepath () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_java_find_sourcepath';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_java_find_sourcepath';
     _java_find_sourcepath "$@"
 }
 _java_packages () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_java_packages';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_java_packages';
     _java_packages "$@"
 }
 _java_path () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_java_path';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_java_path';
     _java_path "$@"
 }
 _javaws () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_javaws';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_javaws';
     _javaws "$@"
 }
 _jilgrep () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_jilgrep';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_jilgrep';
     _jilgrep "$@"
 }
 _jobrunhist () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_jobrunhist';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_jobrunhist';
     _jobrunhist "$@"
 }
 _kernel_versions () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_kernel_versions';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_kernel_versions';
     _kernel_versions "$@"
 }
 _kill () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_kill';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_kill';
     _kill "$@"
 }
 _killall () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_killall';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_killall';
     _killall "$@"
 }
 _known_hosts () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_known_hosts';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_known_hosts';
     _known_hosts "$@"
 }
 _known_hosts_real () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_known_hosts_real';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_known_hosts_real';
     _known_hosts_real "$@"
 }
 _l2ping () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_l2ping';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_l2ping';
     _l2ping "$@"
 }
 _lastlog () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_lastlog';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_lastlog';
     _lastlog "$@"
 }
 _linux_fstab () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_linux_fstab';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_linux_fstab';
     _linux_fstab "$@"
 }
 _longopt () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_longopt';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_longopt';
     _longopt "$@"
 }
 _look () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_look';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_look';
     _look "$@"
 }
 _lsof () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_lsof';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_lsof';
     _lsof "$@"
 }
 _lzma () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_lzma';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_lzma';
     _lzma "$@"
 }
 _mac_addresses () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mac_addresses';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mac_addresses';
     _mac_addresses "$@"
 }
 _make () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_make';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_make';
     _make "$@"
 }
 _man () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_man';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_man';
     _man "$@"
 }
 _mii_tool () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mii_tool';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mii_tool';
     _mii_tool "$@"
 }
 _mkisofs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mkisofs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mkisofs';
     _mkisofs "$@"
 }
 _mktemp () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mktemp';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mktemp';
     _mktemp "$@"
 }
 _modules () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_modules';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_modules';
     _modules "$@"
 }
 _mogrify () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mogrify';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mogrify';
     _mogrify "$@"
 }
 _montage () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_montage';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_montage';
     _montage "$@"
 }
 _mount () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mount';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mount';
     _mount "$@"
 }
 _mutt () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_mutt';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_mutt';
     _mutt "$@"
 }
 _muttaddr () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_muttaddr';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_muttaddr';
     _muttaddr "$@"
 }
 _muttaliases () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_muttaliases';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_muttaliases';
     _muttaliases "$@"
 }
 _muttconffiles () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_muttconffiles';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_muttconffiles';
     _muttconffiles "$@"
 }
 _muttfiledir () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_muttfiledir';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_muttfiledir';
     _muttfiledir "$@"
 }
 _muttquery () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_muttquery';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_muttquery';
     _muttquery "$@"
 }
 _muttrc () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_muttrc';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_muttrc';
     _muttrc "$@"
 }
 _newgrp () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_newgrp';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_newgrp';
     _newgrp "$@"
 }
 _newusers () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_newusers';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_newusers';
     _newusers "$@"
 }
 _nmap () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_nmap';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_nmap';
     _nmap "$@"
 }
 _nslookup () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_nslookup';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_nslookup';
     _nslookup "$@"
 }
 _openssl () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_openssl';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_openssl';
     _openssl "$@"
 }
 _openssl_sections () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_openssl_sections';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_openssl_sections';
     _openssl_sections "$@"
 }
 _pack200 () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pack200';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pack200';
     _pack200 "$@"
 }
 _parse_help () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_parse_help';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_parse_help';
     _parse_help "$@"
 }
 _passwd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_passwd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_passwd';
     _passwd "$@"
 }
 _pci_ids () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pci_ids';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pci_ids';
     _pci_ids "$@"
 }
 _perl () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_perl';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_perl';
     _perl "$@"
 }
 _perldoc () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_perldoc';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_perldoc';
     _perldoc "$@"
 }
 _perlfunctions () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_perlfunctions';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_perlfunctions';
     _perlfunctions "$@"
 }
 _perlmodules () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_perlmodules';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_perlmodules';
     _perlmodules "$@"
 }
 _pg_databases () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pg_databases';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pg_databases';
     _pg_databases "$@"
 }
 _pg_users () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pg_users';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pg_users';
     _pg_users "$@"
 }
 _pgids () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pgids';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pgids';
     _pgids "$@"
 }
 _pgrep () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pgrep';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pgrep';
     _pgrep "$@"
 }
 _pids () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pids';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pids';
     _pids "$@"
 }
 _pnames () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pnames';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pnames';
     _pnames "$@"
 }
 _psql () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_psql';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_psql';
     _psql "$@"
 }
 _pwck () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_pwck';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_pwck';
     _pwck "$@"
 }
 _python () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_python';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_python';
     _python "$@"
 }
 _qdbus () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_qdbus';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_qdbus';
     _qdbus "$@"
 }
 _querybts () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_querybts';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_querybts';
     _querybts "$@"
 }
 _quote_readline_by_ref () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_quote_readline_by_ref';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_quote_readline_by_ref';
     _quote_readline_by_ref "$@"
 }
 _realcommand () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_realcommand';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_realcommand';
     _realcommand "$@"
 }
 _renice () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_renice';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_renice';
     _renice "$@"
 }
 _reply_compgen_array () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_reply_compgen_array';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_reply_compgen_array';
     _reply_compgen_array "$@"
 }
 _reportbug () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_reportbug';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_reportbug';
     _reportbug "$@"
 }
 _rfcomm () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rfcomm';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rfcomm';
     _rfcomm "$@"
 }
 _rfkill () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rfkill';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rfkill';
     _rfkill "$@"
 }
 _ri () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ri';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ri';
     _ri "$@"
 }
 _rl_enabled () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rl_enabled';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rl_enabled';
     _rl_enabled "$@"
 }
 _rmmod () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rmmod';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rmmod';
     _rmmod "$@"
 }
 _root_command () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_root_command';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_root_command';
     _root_command "$@"
 }
 _route () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_route';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_route';
     _route "$@"
 }
 _rpcdebug () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rpcdebug';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rpcdebug';
     _rpcdebug "$@"
 }
 _rpcdebug_flags () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rpcdebug_flags';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rpcdebug_flags';
     _rpcdebug_flags "$@"
 }
 _rsync () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rsync';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rsync';
     _rsync "$@"
 }
 _rtcwake () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_rtcwake';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_rtcwake';
     _rtcwake "$@"
 }
 _samba_debuglevel () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_debuglevel';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_samba_debuglevel';
     _samba_debuglevel "$@"
 }
 _samba_domains () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_domains';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_samba_domains';
     _samba_domains "$@"
 }
 _samba_hosts () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_hosts';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_samba_hosts';
     _samba_hosts "$@"
 }
 _samba_resolve_order () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_samba_resolve_order';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_samba_resolve_order';
     _samba_resolve_order "$@"
 }
 _scp () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_scp';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_scp';
     _scp "$@"
 }
 _scp_local_files () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_scp_local_files';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_scp_local_files';
     _scp_local_files "$@"
 }
 _scp_remote_files () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_scp_remote_files';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_scp_remote_files';
     _scp_remote_files "$@"
 }
 _sdptool () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sdptool';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sdptool';
     _sdptool "$@"
 }
 _sendevent () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sendevent';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sendevent';
     _sendevent "$@"
 }
 _service () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_service';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_service';
     _service "$@"
 }
 _services () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_services';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_services';
     _services "$@"
 }
 _sftp () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sftp';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sftp';
     _sftp "$@"
 }
 _sh () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sh';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sh';
     _sh "$@"
 }
 _shells () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_shells';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_shells';
     _shells "$@"
 }
 _signals () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_signals';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_signals';
     _signals "$@"
 }
 _smbcacls () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbcacls';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbcacls';
     _smbcacls "$@"
 }
 _smbclient () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbclient';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbclient';
     _smbclient "$@"
 }
 _smbcquotas () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbcquotas';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbcquotas';
     _smbcquotas "$@"
 }
 _smbget () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbget';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbget';
     _smbget "$@"
 }
 _smbpasswd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbpasswd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbpasswd';
     _smbpasswd "$@"
 }
 _smbtar () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbtar';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbtar';
     _smbtar "$@"
 }
 _smbtree () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_smbtree';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_smbtree';
     _smbtree "$@"
 }
 _split_longopt () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_split_longopt';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_split_longopt';
     _split_longopt "$@"
 }
 _ssh () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh';
     _ssh "$@"
 }
 _ssh_bindaddress () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_bindaddress';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_bindaddress';
     _ssh_bindaddress "$@"
 }
 _ssh_ciphers () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_ciphers';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_ciphers';
     _ssh_ciphers "$@"
 }
 _ssh_copy_id () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_copy_id';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_copy_id';
     _ssh_copy_id "$@"
 }
 _ssh_macs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_macs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_macs';
     _ssh_macs "$@"
 }
 _ssh_options () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_options';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_options';
     _ssh_options "$@"
 }
 _ssh_suboption () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_suboption';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_suboption';
     _ssh_suboption "$@"
 }
 _ssh_suboption_check () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_ssh_suboption_check';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_ssh_suboption_check';
     _ssh_suboption_check "$@"
 }
 _sshcus () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sshcus';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sshcus';
     _sshcus "$@"
 }
 _sshfs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sshfs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sshfs';
     _sshfs "$@"
 }
 _strace () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_strace';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_strace';
     _strace "$@"
 }
 _stream () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_stream';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_stream';
     _stream "$@"
 }
 _sysctl () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_sysctl';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_sysctl';
     _sysctl "$@"
 }
 _tar () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_tar';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_tar';
     _tar "$@"
 }
 _tilde () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_tilde';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_tilde';
     _tilde "$@"
 }
 _tmux () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_tmux';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_tmux';
     _tmux "$@"
 }
 _tune2fs () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_tune2fs';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_tune2fs';
     _tune2fs "$@"
 }
 _uids () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_uids';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_uids';
     _uids "$@"
 }
 _umount () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_umount';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_umount';
     _umount "$@"
 }
 _unpack200 () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_unpack200';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_unpack200';
     _unpack200 "$@"
 }
 _update_alternatives () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_update_alternatives';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_update_alternatives';
     _update_alternatives "$@"
 }
 _update_rc_d () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_update_rc_d';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_update_rc_d';
     _update_rc_d "$@"
 }
 _upto () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_upto';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_upto';
     _upto "$@"
 }
 _upvar () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_upvar';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_upvar';
     _upvar "$@"
 }
 _upvars () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_upvars';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_upvars';
     _upvars "$@"
 }
 _usb_ids () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_usb_ids';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_usb_ids';
     _usb_ids "$@"
 }
 _user_at_host () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_user_at_host';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_user_at_host';
     _user_at_host "$@"
 }
 _useradd () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_useradd';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_useradd';
     _useradd "$@"
 }
 _userdel () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_userdel';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_userdel';
     _userdel "$@"
 }
 _usergroup () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_usergroup';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_usergroup';
     _usergroup "$@"
 }
 _usermod () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_usermod';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_usermod';
     _usermod "$@"
 }
 _vipw () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_vipw';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_vipw';
     _vipw "$@"
 }
 _vms () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_vms';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_vms';
     _vms "$@"
 }
 _xfreerdp () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xfreerdp';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xfreerdp';
     _xfreerdp "$@"
 }
 _xhost () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xhost';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xhost';
     _xhost "$@"
 }
 _xmllint () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xmllint';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xmllint';
     _xmllint "$@"
 }
 _xmodmap () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xmodmap';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xmodmap';
     _xmodmap "$@"
 }
 _xrandr () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xrandr';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xrandr';
     _xrandr "$@"
 }
 _xrdb () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xrdb';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xrdb';
     _xrdb "$@"
 }
 _xz () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/_xz';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/_xz';
     _xz "$@"
 }
 dequote () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/dequote';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/dequote';
     dequote "$@"
 }
 quote () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/quote';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/quote';
     quote "$@"
 }
 quote_readline () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/quote_readline';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/quote_readline';
     quote_readline "$@"
 }
 ri_get_methods () 
 { 
-    . '/home/walo/.bash/.bash_dyncompletion.d/ri_get_methods';
+    . '/home/walo/.dotfiles/bash_dyncompletion.d/ri_get_methods';
     ri_get_methods "$@"
 }
 complete -F _filedir_xspec freeamp
@@ -1833,8 +1833,8 @@ complete -F _filedir_xspec advi
 complete -o default -F _longopt rmdir
 complete -F _man apropos
 complete -o default -F _service umountroot
-complete -F _sshcus sshcus
 complete -F _filedir_xspec lzmore
+complete -F _sshcus sshcus
 complete -F _man whatis
 complete -o default -F _mii_tool mii-tool
 complete -F _filedir_xspec poedit

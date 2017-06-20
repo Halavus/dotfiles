@@ -7,9 +7,7 @@ _sshcus ()
     opts="--help --verbose --version";
     if [[ ${cur} == -* ]]; then
         COMPREPLY=($(compgen -W "${opts}" -- ${cur}));
-        return 0;
     else
         COMPREPLY=($(compgen -W "$(ls /usr/local/bin/work_in_progress/appdata/)" -- ${cur}));
-        return 0;
     fi
 }

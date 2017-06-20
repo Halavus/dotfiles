@@ -4,9 +4,9 @@
 # function only when it is requested for the first time. This speeds up completion.
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=467231
 
-BASH_COMPLETION=~/.bash/.bash_completion
-BASH_DYNCOMPLETION=~/.bash/.bash_dyncompletion
-BASH_DYNCOMPLETION_DIR=~/.bash/.bash_dyncompletion.d
+BASH_COMPLETION=~/.dotfiles/bash_completion
+BASH_DYNCOMPLETION=~/.dotfiles/bash_dyncompletion
+BASH_DYNCOMPLETION_DIR=~/.dotfiles/bash_dyncompletion.d
 
 echo "Read static completions from $BASH_COMPLETION"
 . "$BASH_COMPLETION" || exit 1

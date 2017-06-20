@@ -1,4 +1,4 @@
-#
+#!/bin/bash
 # bash_aliases
 #
 
@@ -35,7 +35,7 @@ alias igrep='grep -i'
 alias rgrep='grep -r'
 alias ftail='tail -f'
 alias hn='hostname -a'
-alias va='vi ~/.bash/.bash_aliases; source ~/.bash/.bash_aliases && echo "aliases sourced"'
+alias va='vi ~/.dotfiles/bash_aliases; source ~/.dotfiles/bash_aliases && echo "aliases sourced"'
 alias vi='vim'
 
 # coloured output using grc
