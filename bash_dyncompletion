@@ -2,7 +2,7 @@
 # actual completion functions are stored in /home/walo/.dotfiles/bash_dyncompletion.d
 # this file and directory are generated from /home/walo/.dotfiles/bash_completion
 shopt -s extglob progcomp
-declare -r BASH_COMPLETION="/home/walo/.dotfiles/bash_completion"
+BASH_COMPLETION="/home/walo/.dotfiles/bash_completion"
 _ImageMagick () 
 { 
     . '/home/walo/.dotfiles/bash_dyncompletion.d/_ImageMagick';
