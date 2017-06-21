@@ -35,7 +35,7 @@ alias igrep='grep -i'
 alias rgrep='grep -r'
 alias ftail='tail -f'
 alias hn='hostname -a'
-alias va='vi ~/.dotfiles/bash_aliases; source ~/.dotfiles/bash_aliases && echo "aliases sourced"'
+alias va='vi ~/.dotfiles/aliases; source ~/.dotfiles/aliases && echo "aliases sourced"'
 alias vi='vim'
 
 # coloured output using grc
@@ -80,9 +80,6 @@ alias psbin="p /usr/local/sbin/"
 # ---------------------
 
 # editing/updating
-alias edalias='vim ~/.bash_aliases'
-alias resalias='source ~/.bashrc'
-alias checkalias='cat ~/.bash_aliases'
 alias edbackup='sudo vim /usr/local/sbin/backup'
 alias edgrubmenu='sudo vim /etc/grub.d/40_custom'
 alias edhdparm='sudo vim /etc/hdparm.conf'
@@ -118,7 +115,6 @@ alias trahs='trash'
 alias sshmp='ssh muspnjyc@musikpunkt.ch'
 
 # unordered
-alias aliases='cat /home/walo/.bash_aliases'
 alias checksda='sudo hdparm -C /dev/sda'
 alias aptitude='sudo aptitude'
 alias py='python'

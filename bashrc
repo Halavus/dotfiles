@@ -63,17 +63,17 @@ export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 
 export CDPATH=".::..:../..:~/:~/dev/"
 
-source ~/.dotfiles/bash_prompt
+source ~/.dotfiles/prompt
 source ~/.dotfiles/bash_dyncompletion
-source ~/.dotfiles/bash_aliases
+source ~/.dotfiles/aliases
 
-if [[ -d ~/.dotfiles/bash_functions.d ]]; then
-    for file in ~/.dotfiles/bash_functions.d/*; do
+if [[ -d ~/.dotfiles/functions.d ]]; then
+    for file in ~/.dotfiles/functions.d/*; do
         source "$file"
     done
 fi
 
-export INPUTRC=~/.dotfiles/bash_inputrc
+export INPUTRC=~/.dotfiles/inputrc
 
 umask 022
 

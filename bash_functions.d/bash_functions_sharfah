@@ -5,7 +5,7 @@
 #
 # load autosys functions
 #
-. ~/.dotfiles/bash_autosys_functions
+. ~/.dotfiles/autosys_functions
 
 #
 # moves file to ~/.Trash
