@@ -114,6 +114,11 @@ alias trahs='trash'
 # SSH Connections
 alias sshmp='ssh muspnjyc@musikpunkt.ch'
 
+# git
+alias status='git status'
+alias addall='git add -A'
+alias commit='git commit'
+
 # unordered
 alias checksda='sudo hdparm -C /dev/sda'
 alias aptitude='sudo aptitude'
@@ -126,3 +131,5 @@ alias umountnetgear='sudo umount /media/netgear ; echo "option -l to force."'
 alias du='du -sh' # Disk Usage Summary Human readable
 alias event='cd sites/metanet_backup/musikpunkt/swisstrombonedays.ch/wp-content/themes/event'
 alias findwalo='find . -maxdepth 1 -user walo'
+alias shutdown='sudo shutdown'
+
