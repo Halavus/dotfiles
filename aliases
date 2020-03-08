@@ -102,7 +102,7 @@ alias pbin="p /usr/local/bin/"
 alias psbin="p /usr/local/sbin/"
 alias dot='p ~/.dotfiles'
 alias pimporter='p ~/code_the_web/python/PrUn/ ; lal'
-alias pflaskimporter='p /home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer ; lal'
+alias cdprun='p /home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer ; lal'
 
 
 # editing/updating
