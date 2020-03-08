@@ -5,26 +5,27 @@
 #
 # load autosys functions
 #
-. ~/.dotfiles/autosys_functions
+
+#. ~/.dotfiles/autosys_functions
 
 #
 # moves file to ~/.Trash
 # (use instead of rm)
 #
-trash(){
-   if [ $# -eq 0 ]
-   then
-       echo Usage: trash FILE...
-       return 1
-   fi
-   local DATE=$(date +%Y%m%d)
-   [ -d "${HOME}/.Trash/${DATE}" ] || mkdir -p ${HOME}/.Trash/${DATE}
-   for FILE in "$@" 
-   do
-     mv "${FILE}" "${HOME}/.Trash/${DATE}"
-     echo "${FILE} trashed!"   
-   done
-}
+#trash(){
+#   if [ $# -eq 0 ]
+#   then
+#       echo Usage: trash FILE...
+#       return 1
+#   fi
+#   local DATE=$(date +%Y%m%d)
+#   [ -d "${HOME}/.Trash/${DATE}" ] || mkdir -p ${HOME}/.Trash/${DATE}
+#   for FILE in "$@" 
+#   do
+#     mv "${FILE}" "${HOME}/.Trash/${DATE}"
+#     echo "${FILE} trashed!"   
+#   done
+#}
 
 #
 # vertical echo

@@ -1,4 +1,0 @@
-_kernel_versions () 
-{ 
-    COMPREPLY=($( compgen -W '$( command ls /lib/modules )' -- "$cur" ))
-}

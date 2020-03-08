@@ -1,8 +1,0 @@
-_pgrep () 
-{ 
-    local cur;
-    COMPREPLY=();
-    _get_comp_words_by_ref cur;
-    _pnames;
-    return 0
-}

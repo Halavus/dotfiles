@@ -1,6 +1,0 @@
-quote_readline () 
-{ 
-    local quoted;
-    _quote_readline_by_ref "$1" ret;
-    printf %s "$ret"
-}

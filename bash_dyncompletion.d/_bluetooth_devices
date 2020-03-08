@@ -1,4 +1,0 @@
-_bluetooth_devices () 
-{ 
-    COMPREPLY=(${COMPREPLY[@]:-} $( compgen -W "$( hcitool dev |         awk '/^\t/{print $1}' )" -- "$cur" ))
-}

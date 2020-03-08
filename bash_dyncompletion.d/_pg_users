@@ -1,5 +1,0 @@
-_pg_users () 
-{ 
-    COMPREPLY=($( compgen -W "$( psql -Atqwc 'select usename from pg_user'         template1 2>/dev/null )" -- "$cur" ));
-    [ ${#COMPREPLY[@]} -eq 0 ] && COMPREPLY=($( compgen -u -- "$cur" ))
-}

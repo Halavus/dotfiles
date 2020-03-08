@@ -2,7 +2,7 @@
 # bash_aliases
 #
 
-alias reload='. $HOME/.bash_profile'
+alias reload='. $HOME/.bashrc'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -15,32 +15,46 @@ alias cla='clear;la'
 alias cll='clear;ll'
 alias cls='clear;ls'
 alias clal='clear;lal'
+alias rmi='rm -i'
+#alias rm='rmi' # NOT WORKING?
 alias rmdir='rm -rf'
 alias d='date +%Y%m%d-%H%M%S'
 alias h='history'
 alias ls='ls -F --color=auto'
 alias l='ls'
 alias la='ls -ah'
-alias ll='ls -ltrh'
+alias ll='ls -lh'
+alias llt='ls -lhrt'
 alias lu='ls -lturh'
-alias lal='ls -altrh'
+alias lal='ls -alh'
+alias lalt='ls -alhrt'
 alias ldir='ll -d */'
 alias sl='ls'
 alias less='less -iMFR'
 alias more='less'
 alias mroe='more'
-alias m='more'
 alias r='fc -s'
 alias igrep='grep -i'
 alias rgrep='grep -r'
 alias ftail='tail -f'
 alias hn='hostname -a'
-alias va='vi ~/.dotfiles/aliases; source ~/.dotfiles/aliases && echo "aliases sourced"'
+alias va='vim ~/.dotfiles/aliases; source ~/.dotfiles/aliases && echo "aliases sourced"'
+alias ca='va'
+alias aliases='less ~/.dotfiles/aliases'
+alias vf='vim ~/.dotfiles/functions.d/functions_walo ; reload && echo "functions sourced"'
+alias vfs='vim ~/.dotfiles/functions.d/functions_sharfah ; reload && echo "functions sourced"'
+alias vsources='sudo vim /etc/apt/sources.list'
 alias vi='vim'
+alias cim='vim'
+alias vin='vim'
+alias mc='mv'
+alias lc='wc -l'
+alias mount='sudo mount'
+alias umount='sudo umount'
 
 # coloured output using grc
 alias ping='grc ping'
-alias netstat='grc netstat'
+#alias netstat='grc netstat'
 alias traceroute='grc traceroute'
 alias diff='grc diff'
 alias tail='grc tail'
@@ -52,84 +66,119 @@ alias fullps='ps -auxwww'
 alias functions='declare -F'
 alias xml='xmllint --format'
 
+
 # Walo aliases
 # variables
 today=$(date +%d%m%Y)
-backups=/media/walo/Backups
+alias time="date +%H%M%S"
 
-# apps
-#alias py='python3'
-#alias py2='python'
-# alias df='/home/walo/games/df_linux43.06/dfhack'
-alias dfnb='/home/walo/games/df_linuxLNB/startlnp'
-alias chrome='google-chrome'
-# ---------------------
+
+# apps GUI
+alias chrome='google-chrome &'
+#in script named inbox
+alias apex='google-chrome https://apex.prosperousuniverse.com/ ; https://docs.google.com/spreadsheets/d/1UAWZxE9mie8xeoOPeQ7S-Y4Cu6qk2l5WOfzIoDmkL_Q/edit# &'
+alias inbox='/usr/local/bin/openinboxes &'
+#alias work=inbox&wapp
+alias o='okular'
+alias lindo='lindo_mdp_halavus'
+
+# DF
+alias dfvanilla='~/games/current/df'
+alias dfhack='~/games/current/dfhack'
+alias cddf='pushd ~/games/current && clal'
+alias cdinit='pushd ~/games/current/data/init && clal'
+alias renicedf='sudo renice -n -20 -p $(pgrep Dwarf_Fortress)'
 
 # moving
-alias ..='cd ..'
 alias p=pushd
 alias pp=popd
-
-alias flasky='/users/walo/flasky'
+#alias flasky='/users/walo/flasky'
 alias ticket='cd /users/walo/documents/code_the_web/ticket'
-alias learnpy='cd /users/walo/learnPython'
+#alias learnpy='cd /users/walo/learnPython'
 alias code='cd /home/walo/code_the_web'
-alias wp='cd /home/walo/code_the_web/wp/test.valentinoberson.ch/wp-content/themes/test_child_2017/'
+alias current='cd /home/walo/code_the_web/python/inventur_fail_csv && clal'
+alias codepy='cd /home/walo/code_the_web/python/'
 alias pbin="p /usr/local/bin/"
 alias psbin="p /usr/local/sbin/"
-# ---------------------
+alias dot='p ~/.dotfiles'
+alias pimporter='p ~/code_the_web/python/PrUn/ ; lal'
+alias pflaskimporter='p /home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer ; lal'
+
 
 # editing/updating
-alias edbackup='sudo vim /usr/local/sbin/backup'
 alias edgrubmenu='sudo vim /etc/grub.d/40_custom'
 alias edhdparm='sudo vim /etc/hdparm.conf'
 alias update-grub='sudo update-grub'
-# ---------------------
+alias edgrub="sudo vim /etc/default/grub && update-grub"
+
 
 # commands
-#  Flask related
+#  Python/Flask related
 alias avenv='source venv/bin/activate'
-alias start='python3 ticketservice.py runserver'
+alias start='python ticketservice.py runserver'
+#alias py='python'
+alias py='py3'
+alias py3='python3'
+alias startimporter_localhost='/home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer/venv/bin/gunicorn -b 0.0.0.0:5000 app:app'
 
 #  System
-alias apt-get='sudo apt-get'
+alias aptiup='aptitude update && aptitude full-upgrade'
+alias aptitude='sudo aptitude'
+alias install='aptitude install'
+alias apt-get="printf '\nUsing aptitude instead of apt.\n' && aptitude"
 alias blkid='sudo blkid'
-alias backup='sudo backup'
 alias gparted='sudo gparted'
 alias killsda='sudo hdparm -y /dev/sda'
-#alias l='ls -lah'
-#alias rsync='sudo rsync -ahvPHXS --progress'
-alias readlog='less ~/zzbackup.logs/rsync-latest.log'
-
+alias checksda='sudo hdparm -C /dev/sda'
+alias rsync='rsync -ahvPHXS'
+alias rsyncosx='sudo rsync -hvPSr --exclude-from=/home/walo/exclude-list'
+alias vback='sudo vim /usr/local/sbin/backup'
+alias readlog='less /var/log/rsnapshot.log'
+alias vexclude='sudo vim /usr/local/sbin/exclude-list.txt'
+alias snap='rsnapshot'
+alias snyp='snap'
+alias s='snap'
+alias vsnap='sudo vim /etc/rsnapshot.conf'
+alias backup='sudo mount /rsnapshot/ ; sudo rsnapshot sync && sudo rsnapshot alpha ; sudo umount /rsnapshot'
 alias rm='rm -v'
+alias mv='mv -v'
+alias cp='cp -v'
 #  !! In Order to have sudo work with all user aliases !!
 alias sudo='sudo '
 # from trash-cli pkg. See man trash for more infos.
 ## to restore a file sent to trash, run: restore-trash (from trash-cli pkg)
-alias trash='trash-put'
+alias trash='trash-put -v'
 alias trahs='trash'
+alias shutdown='sudo shutdown'
+alias unpack='extract'
+alias c="calc"
+alias du='du -sh' # Disk Usage Summary Human readable
+alias m='sudo mounteddevices'
+alias vfstab='sudo cp /etc/fstab /etc/fstab.$today.$(time) && sudo vim /etc/fstab'
 
-# --------------------
 
-# SSH Connections
+# SSH
 alias sshmp='ssh muspnjyc@musikpunkt.ch'
+alias edsshvo='sudo vim /usr/local/bin/sshvo'
+
 
 # git
 alias status='git status'
 alias addall='git add -A'
 alias commit='git commit'
+alias branch='git branch'
+alias tree='git show-branch' # Shows the whole tree
+
 
 # unordered
-alias checksda='sudo hdparm -C /dev/sda'
-alias aptitude='sudo aptitude'
-alias py='python'
-alias startxampp='(cd /opt/lampp/ && sudo ./xampp start)'
-alias edsshvo='sudo vim /usr/local/bin/sshvo'
+#alias startxampp='(cd /opt/lampp/ && sudo ./xampp start)'
 alias goodnight='sudo goodnight'
-alias mountnetgear='sudo mount -t cifs //10.0.0.1/test /media/netgear/ -o uid=1000,gid=1000,username=admin,password=treize13,rw'
-alias umountnetgear='sudo umount /media/netgear ; echo "option -l to force."'
-alias du='du -sh' # Disk Usage Summary Human readable
-alias event='cd sites/metanet_backup/musikpunkt/swisstrombonedays.ch/wp-content/themes/event'
 alias findwalo='find . -maxdepth 1 -user walo'
-alias shutdown='sudo shutdown'
-
+alias audiveris="cd /shared/audiveris/ && gradle run"
+pics="/shared/Pictures/SD_Valentin"
+alias pics=$pics
+alias ppics="cd $pics"
+alias vex="vim ~/exclude-list"
+alias ever="google-chrome https://www.evernote.com/Home.action?login=true &"
+alias sortmypics="sortpics /shared/Pictures/SD_Valentin/DCIM /shared/Pictures/SD_Valentin/sorted"
+#alias dropbox="dropbox.py"

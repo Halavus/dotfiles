@@ -40,7 +40,7 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
-export LESSOPEN="|~/bin/lesspipe.sh %s"
+#export LESSOPEN="|~/bin/lesspipe.sh %s"
 
 # define some colours
 GREY=$'\033[1;30m'
@@ -64,7 +64,7 @@ export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 export CDPATH=".::..:../..:~/:~/dev/"
 
 source ~/.dotfiles/prompt
-source ~/.dotfiles/bash_dyncompletion
+#source ~/.dotfiles/bash_dyncompletion
 source ~/.dotfiles/aliases
 
 if [[ -d ~/.dotfiles/functions.d ]]; then
@@ -79,3 +79,12 @@ umask 022
 
 # trap commands and echo them to xterm titlebar. Must be last line.
 trap 'echo -ne "\033]0;$BASH_COMMAND - $USER@${HOSTNAME}>$(pwd)\007"' DEBUG
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+#export SDKMAN_DIR="/home/walo/.sdkman"
+#[[ -s "/home/walo/.sdkman/bin/sdkman-init.sh" ]] && source "/home/walo/.sdkman/bin/sdkman-init.sh"
+
+export GOROOT=/opt/go
+export GOPATH=~/code_the_web/go/
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/opt/bin

@@ -1,21 +1,16 @@
 #!/bin/bash
 suspendsystem(){
-    exec systemctl suspend
+    systemctl suspend
 }
 
-sdbackup(){ # Backups pictures from SD card of Nexus 5
-
-    printf "
-    Using adb-sync protocol to sync from device.
-    Download-link: https://github.com/google/adb-sync
-
-    "
-    adb-sync --reverse /storage/emulated/0/DCIM /shared/Pictures/SD_Valentin/ ;
-    adb-sync --reverse /storage/emulated/0/WhatsApp/Media/WhatsApp\ Images /shared/Pictures/SD_Valentin/ ;
-    adb-sync --reverse /storage/emulated/0/WhatsApp/Media/WhatsApp\ Video /shared/Pictures/SD_Valentin/ ;
+hidden(){ # list only dotfiles and pass args to ls
+    ls -a "$@" | grep '^\.' ; 
 }
 
-eject(){ # Ejects the backup drive
-    umount /dev/sdc1
-    umount /dev/sdc2
+#TODO Make of this one liner a function
+#find DCIM/ -maxdepth 1 -type f -print0 | xargs -0 shuf -e -n 10 -z | xargs -0 cp -vt atest.d/
+
+cprand(){ # cp x rand FILES to target
+
+    find "$1" -type f -print0 | xargs -0 shuf -e -n "$3" -z | xargs -0 cp -vt "$2"
 }
