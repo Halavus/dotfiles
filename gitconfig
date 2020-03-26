@@ -1,0 +1,25 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = halavus
+	email = halavus@gmail.com
+[alias]
+	# one-line log
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short	
+	ci = commit --verbose
+	ca = commit -a --verbose
+	cam = commit -a --verbose -m
+	save = commit -a --verbose -m "SAVEPOINT"
+	co = checkout
+	cob = checkout -b
+	s = status -s
+	st = status
+	br = branch
+	unstage = reset HEAD --
+	aa = add -A
+	# list aliases
+	la = "!git config -l | grep alias | cut -c 7-"
+[core]
+	editor = vim

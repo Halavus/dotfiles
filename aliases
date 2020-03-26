@@ -76,7 +76,7 @@ alias time="date +%H%M%S"
 # apps GUI
 alias chrome='google-chrome &'
 #in script named inbox
-alias apex='google-chrome https://apex.prosperousuniverse.com/ ; https://docs.google.com/spreadsheets/d/1UAWZxE9mie8xeoOPeQ7S-Y4Cu6qk2l5WOfzIoDmkL_Q/edit# &'
+alias apex='google-chrome https://apex.prosperousuniverse.com/ && https://docs.google.com/spreadsheets/d/1UAWZxE9mie8xeoOPeQ7S-Y4Cu6qk2l5WOfzIoDmkL_Q/edit# &'
 alias inbox='/usr/local/bin/openinboxes &'
 #alias work=inbox&wapp
 alias o='okular'
@@ -103,10 +103,11 @@ alias psbin="p /usr/local/sbin/"
 alias dot='p ~/.dotfiles'
 alias pimporter='p ~/code_the_web/python/PrUn/ ; lal'
 alias cdprun='p /home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer ; lal'
+alias cdship='p /home/walo/code_the_web/python/PrUn/shipping_profits ; lal'
 
 
 # editing/updating
-alias edgrubmenu='sudo vim /etc/grub.d/40_custom'
+alias edgrubmenu='sudo grub-customizer'
 alias edhdparm='sudo vim /etc/hdparm.conf'
 alias update-grub='sudo update-grub'
 alias edgrub="sudo vim /etc/default/grub && update-grub"
@@ -122,7 +123,7 @@ alias py3='python3'
 alias startimporter_localhost='/home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer/venv/bin/gunicorn -b 0.0.0.0:5000 app:app'
 
 #  System
-alias aptiup='aptitude update && aptitude full-upgrade'
+alias aptiup='aptitude update && aptitude full-upgrade && aptitude autoclean'
 alias aptitude='sudo aptitude'
 alias install='aptitude install'
 alias apt-get="printf '\nUsing aptitude instead of apt.\n' && aptitude"
@@ -131,7 +132,7 @@ alias gparted='sudo gparted'
 alias killsda='sudo hdparm -y /dev/sda'
 alias checksda='sudo hdparm -C /dev/sda'
 alias rsync='rsync -ahvPHXS'
-alias rsyncosx='sudo rsync -hvPSr --exclude-from=/home/walo/exclude-list'
+#alias rsyncosx='sudo rsync -hvPSr --exclude-from=/home/walo/exclude-list'
 alias vback='sudo vim /usr/local/sbin/backup'
 alias readlog='less /var/log/rsnapshot.log'
 alias vexclude='sudo vim /usr/local/sbin/exclude-list.txt'
@@ -163,6 +164,7 @@ alias edsshvo='sudo vim /usr/local/bin/sshvo'
 
 
 # git
+alias vga='vim ~/.dotfiles/gitconfig'
 alias status='git status'
 alias addall='git add -A'
 alias commit='git commit'
