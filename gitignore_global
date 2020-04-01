@@ -1,0 +1,15 @@
+# setup with:
+# git config --global core.excludesfile .dotfiles/gitignore_global
+
+# KDE directory preferences
+.directory
+
+# vim swap files
+*.swp
+
+# virtualenv dir
+venv
+
+# Python related
+__pycache__
+*.pyc

@@ -16,8 +16,7 @@ alias cll='clear;ll'
 alias cls='clear;ls'
 alias clal='clear;lal'
 alias rmi='rm -i'
-#alias rm='rmi' # NOT WORKING?
-alias rmdir='rm -rf'
+alias rmdir='rm -rfI'
 alias d='date +%Y%m%d-%H%M%S'
 alias h='history'
 alias ls='ls -F --color=auto'
@@ -48,14 +47,12 @@ alias vi='vim'
 alias cim='vim'
 alias vin='vim'
 alias mc='mv'
-alias lc='wc -l'
 alias mount='sudo mount'
 alias umount='sudo umount'
 
 # coloured output using grc
 alias ping='grc ping'
 #alias netstat='grc netstat'
-alias traceroute='grc traceroute'
 alias diff='grc diff'
 alias tail='grc tail'
 alias ps='grc ps'
@@ -92,35 +89,26 @@ alias renicedf='sudo renice -n -20 -p $(pgrep Dwarf_Fortress)'
 # moving
 alias p=pushd
 alias pp=popd
-#alias flasky='/users/walo/flasky'
-alias ticket='cd /users/walo/documents/code_the_web/ticket'
-#alias learnpy='cd /users/walo/learnPython'
 alias code='cd /home/walo/code_the_web'
-alias current='cd /home/walo/code_the_web/python/inventur_fail_csv && clal'
-alias codepy='cd /home/walo/code_the_web/python/'
 alias pbin="p /usr/local/bin/"
 alias psbin="p /usr/local/sbin/"
 alias dot='p ~/.dotfiles'
-alias pimporter='p ~/code_the_web/python/PrUn/ ; lal'
 alias cdprun='p /home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer ; lal'
 alias cdship='p /home/walo/code_the_web/python/PrUn/shipping_profits ; lal'
 
 
 # editing/updating
 alias edgrubmenu='sudo grub-customizer'
-alias edhdparm='sudo vim /etc/hdparm.conf'
 alias update-grub='sudo update-grub'
-alias edgrub="sudo vim /etc/default/grub && update-grub"
 
 
 # commands
-#  Python/Flask related
+#  Python, Virtualenv, Flask related
+alias rmpyc='find . -name "*.pyc" -delete'
 alias avenv='source venv/bin/activate'
-alias start='python ticketservice.py runserver'
-#alias py='python'
 alias py='py3'
 alias py3='python3'
-alias startimporter_localhost='/home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer/venv/bin/gunicorn -b 0.0.0.0:5000 app:app'
+alias startimporter_localhost='/home/walo/code_the_web/flask-python/PrUn_inventory_importer/inventory_importer/venv/bin/gunicorn -b 0.0.0.0:5000 wsgi:app'
 
 #  System
 alias aptiup='echo "update" && aptitude update && echo "full-upgrade" && aptitude full-upgrade && echo "autoclean" && aptitude autoclean && echo "" && echo "purge" && aptitude purge'
@@ -129,8 +117,6 @@ alias install='aptitude install'
 alias apt-get="printf '\nUsing aptitude instead of apt.\n' && aptitude"
 alias blkid='sudo blkid'
 alias gparted='sudo gparted'
-alias killsda='sudo hdparm -y /dev/sda'
-alias checksda='sudo hdparm -C /dev/sda'
 alias rsync='rsync -ahvPHXS'
 #alias rsyncosx='sudo rsync -hvPSr --exclude-from=/home/walo/exclude-list'
 alias vback='sudo vim /usr/local/sbin/backup'
@@ -159,8 +145,6 @@ alias vfstab='sudo cp /etc/fstab /etc/fstab.$today.$(time) && sudo vim /etc/fsta
 
 
 # SSH
-alias sshmp='ssh muspnjyc@musikpunkt.ch'
-alias edsshvo='sudo vim /usr/local/bin/sshvo'
 
 
 # git
@@ -183,4 +167,3 @@ alias ppics="cd $pics"
 alias vex="vim ~/exclude-list"
 alias ever="google-chrome https://www.evernote.com/Home.action?login=true &"
 alias sortmypics="sortpics /shared/Pictures/SD_Valentin/DCIM /shared/Pictures/SD_Valentin/sorted"
-#alias dropbox="dropbox.py"

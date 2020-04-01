@@ -79,7 +79,7 @@ set foldmethod=indent
 set foldlevel=99
 " Enable folding with spacebar
 nnoremap <space> za
-au BufNewFile, BufRead *.py
+au BufNewFile,BufRead *.py
     \ set tabstop=4
     \ set softtabstop=4
     \ set shiftwidth=4
@@ -90,16 +90,6 @@ au BufNewFile, BufRead *.py
 
 highlight BadWhitespace ctermbg=darkgreen guibg=darkgreen
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-"python with virtualenv support
-python3 << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
 
 let python_highlight_all=1
 syntax on
