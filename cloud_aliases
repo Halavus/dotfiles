@@ -1,0 +1,13 @@
+#! /bin/bash
+#
+
+alias a2restart='apache2ctl restart'
+alias logprun='cat /var/www/vhosts/halavus.com/logs/prun.halavus.com/error_log'
+alias logapacheerror='cat /var/log/apache2/error.log'
+alias logapacheaccess='cat /var/log/apache2/access.log'
+alias cdapache2='cd /etc/apache2'
+alias cdprun='cd /var/www/vhosts/halavus.com/prun.halavus.com/inventory_importer'
+alias vconf='vim /etc/apache2/sites-available/inventory_importer.conf'
+alias restartinventoryimporter='systemctl restart inventory_importer.service'
+alias installreqs='avenv ; pip install -r requirements.txt ; deactivate'
+alias valiases='vim ~/.dotfiles/cloud_aliases; source ~/.dotfiles/cloud_aliases && echo "aliases sourced"'
