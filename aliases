@@ -104,6 +104,7 @@ alias update-grub='sudo update-grub'
 
 # commands
 #  Python, Virtualenv, Flask related
+alias pi='py -i'
 alias rmpyc='find . -name "*.pyc" -delete'
 alias avenv='source venv/bin/activate'
 alias py='py3'
