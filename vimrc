@@ -26,46 +26,8 @@ set undolevels=1000     " 1000 undos
 set modeline
 set background=dark
 
+" START of python living in vim config
 " see https://realpython.com/vim-and-python-a-match-made-in-heaven/
-" Start of Vundle setup
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-"
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-"
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tmhedberg/SimpylFold'
-let g:SimpylFold_docstring_preview=1
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'Valloric/YouCompleteMe' "Autocompletion plugin https://github.com/ycm-core/YouCompleteMe/blob/master/README.md#linux-64-bit
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-"The first line ensures that the auto-complete window goes away when you’re
-"done with it, and the second defines a shortcut for goto definition.
-"
-Plugin 'vim-syntastic/syntastic' "Syntax check
-Plugin 'nvie/vim-flake8'         "PEP8 check
-Plugin 'kien/ctrlp.vim'          "Hit ctrl+P for searching
-"
-"
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
-" Run :PluginInstall in vim to auto install listed plugins
-"
-" ...
-"
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" End of Vundle setup
-"
-" Start of python living in vim config
 set splitbelow
 set splitright
 
@@ -129,3 +91,42 @@ if version >= 700
 endif
 
 "filetype indent plugin on
+"END of python living in vim config
+
+" START of Vundle setup
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+"
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tmhedberg/SimpylFold'
+let g:SimpylFold_docstring_preview=1
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Valloric/YouCompleteMe' "Autocompletion plugin https://github.com/ycm-core/YouCompleteMe/blob/master/README.md#linux-64-bit
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"The first line ensures that the auto-complete window goes away when you’re
+"done with it, and the second defines a shortcut for goto definition.
+"
+Plugin 'vim-syntastic/syntastic' "Syntax check
+Plugin 'nvie/vim-flake8'         "PEP8 check
+Plugin 'kien/ctrlp.vim'          "Hit ctrl+P for searching
+"
+"
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+" Run :PluginInstall in vim to auto install listed plugins
+"
+" ...
+"
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" END of Vundle setup
